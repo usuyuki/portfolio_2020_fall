@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>うすゆきポートフォリオ</title>
+    <link rel="stylesheet" href="destyle.css">
+    <link ref="stylesheet" href="style.css">
     <?php wp_head(); ?>
 </head>
 <body>
+    <div class="wrapper">
+
+
     <div class="side-header">
 
         
@@ -17,11 +22,43 @@
         <div class="side-menu">
             <nav id="g_navi">
                 <ul>
-                    <li><div class="side-menu-link"><a href="/">ホーム</a></div></li>
-                    <li><div class="side-menu-link"><a href="/work">制作</a></div></li>
-                    <li><div class="side-menu-link"><a href="/hobby">趣味</a></div></li>
-                    <li><div class="side-menu-link"><a href="/book">読書</a></div></li>
-                    <li><div class="side-menu-link"><a href="/coffee">珈琲</a></div></li>
+                    <li>
+                        <div class="side-menu-link">
+                            <a href="/">
+                            <div class="side-menu-link-icon">
+                                <img src="logo/home-24px.svg">
+                            </div>
+                            <div class="side-menu-link-name">
+                                <p>ホーム</p>
+                            </div>
+                        </a>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <div class="side-menu-link">
+                            <a href="/work">制作</a
+                                >
+                        </div
+                        ></li>
+                    <li>
+                        
+                        <div class="side-menu-link">
+                            <a href="/hobby">趣味</a>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <div class="side-menu-link">
+                            <a href="/book">読書</a>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <div class="side-menu-link">
+                            <a href="/coffee">珈琲</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -45,5 +82,6 @@
 
 
     <?php wp_footer(); ?>
+</div>
 </body>
 </html>

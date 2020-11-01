@@ -93,7 +93,7 @@
 
 
 
-        <div class="d-flex justify-content-around mt-4">
+        <div class="d-flex flex-wrap  mt-4">
 
 
             <?php 
@@ -101,7 +101,7 @@
                 while ( have_posts() ) : the_post();
                  
             ?>
-            <section class="text-white text-decoration-none text-center ">
+            <section class="text-white text-decoration-none text-center m-3  " style="flex-basis:30%">
 
                 <div class="">
                     <!-- 画像 -->
@@ -110,6 +110,9 @@
             $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
             if( $image ) {
                 echo wp_get_attachment_image( $image, $size );
+            }
+            else{
+                echo  wp_get_attachment_image( 126, $size );
             }
             ?>
 

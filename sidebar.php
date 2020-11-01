@@ -7,7 +7,7 @@
 
         <div class="side-logo  pt-3">
             <a href="/" class="text-decoration-none">
-                <img src="<?php echo get_template_directory_uri(); ?>/logo/portfolio_title20201027.svg">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/portfolio_title20201027.svg">
             </a>
         </div>
 
@@ -17,7 +17,7 @@
             <div class="side-menu-link row text-center my-5">
                 <a href="/" class="text-decoration-none col ">
                     <div class="side-menu-link-icon col mb-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/logo/home-24px.svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/home-24px.svg">
                     </div>
                     <div class="side-menu-link-name text-black h5 col ">
                         <p>ホーム</p>
@@ -28,7 +28,7 @@
             <div class="side-menu-link row text-center my-5">
                 <a href="/work" class="text-decoration-none col">
                     <div class="side-menu-link-icon mb-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/logo/card_giftcard-24px.svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/card_giftcard-24px.svg">
                     </div>
                     <div class="side-menu-link-name text-black h5  ">
                         <p>制作</p>
@@ -39,7 +39,7 @@
             <div class="side-menu-link row text-center my-5">
                 <a href="/hobby" class="text-decoration-none col">
                     <div class="side-menu-link-icon mb-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/logo/loyalty-24px.svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/loyalty-24px.svg">
                     </div>
                     <div class="side-menu-link-name text-black h5">
                         <p>趣味</p>
@@ -50,7 +50,7 @@
             <div class="side-menu-link row text-center my-5">
                 <a href="/book" class="text-decoration-none col">
                     <div class="side-menu-link-icon mb-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/logo/book-24px.svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/book-24px.svg">
                     </div>
                     <div class="side-menu-link-name text-black h5">
                         <p>読書</p>
@@ -61,7 +61,7 @@
             <div class="side-menu-link row text-center my-5">
                 <a href="/coffee" class="text-decoration-none col">
                     <div class="side-menu-link-icon mb-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/logo/local_cafe-24px.svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/local_cafe-24px.svg">
                     </div>
                     <div class="side-menu-link-name text-decoration-none text-black h5">
                         <p>珈琲</p>

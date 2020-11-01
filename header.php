@@ -35,6 +35,13 @@
             margin-top: 20%;
 
         }
+
+        a:hover {
+
+            text-decoration: underline;
+            color: white;
+
+        }
     </style>
 </head>
 

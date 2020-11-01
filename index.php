@@ -26,6 +26,10 @@
                 <img
                     src="https://raw.githubusercontent.com/Usuyuki/Usuyuki/master/profile-summary-card-output/solarized/1-repos-per-language.svg">
             </div>
+            <div class="my-3" style="flex-basis:20%;">
+                <img src="https://grass-graph.moshimo.works/images/Usuyuki.png">
+
+            </div>
         </div>
     </div>
 </div><!-- メインのcolのdiv閉じ -->

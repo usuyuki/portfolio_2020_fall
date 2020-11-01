@@ -9,20 +9,20 @@
         </div>
 
         <div class="row d-flex justify-content-around">
-            <div class="my-3" style="flex-basis:40%;">
+            <!-- <div class="my-3" style="flex-basis:40%;">
 
                 <img
                     src="https://raw.githubusercontent.com/Usuyuki/Usuyuki/master/profile-summary-card-output/solarized/0-profile-details.svg">
-            </div>
-            <div class="my-3" style="flex-basis:40%;">
+            </div> -->
+            <div class="my-3" style="flex-basis:20%;">
                 <img
                     src="https://raw.githubusercontent.com/Usuyuki/Usuyuki/master/profile-summary-card-output/solarized/3-stats.svg">
             </div>
-            <div class="my-3" style="flex-basis:40%;">
+            <div class="my-3" style="flex-basis:20%;">
                 <img
                     src="https://raw.githubusercontent.com/Usuyuki/Usuyuki/master/profile-summary-card-output/solarized/2-most-commit-language.svg">
             </div>
-            <div class="my-3" style="flex-basis:40%;">
+            <div class="my-3" style="flex-basis:20%;">
                 <img
                     src="https://raw.githubusercontent.com/Usuyuki/Usuyuki/master/profile-summary-card-output/solarized/1-repos-per-language.svg">
             </div>

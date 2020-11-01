@@ -5,9 +5,10 @@
 
 
 
-        <div class="side-logo  pt-3">
+        <div class="side-logo  pt-5">
             <a href="/" class="text-decoration-none">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/logo/portfolio_title20201027.svg">
+                <img class="logo-img"
+                    src="<?php echo get_template_directory_uri(); ?>/img/logo/portfolio_title20201027.png">
             </a>
         </div>
 

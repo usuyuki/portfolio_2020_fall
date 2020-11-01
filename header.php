@@ -15,10 +15,11 @@
     <?php wp_head(); ?>
     <style>
         .sidebar_fixed {
-            position: sticky;
+            position: fixed;
             top: 0px;
             background-color: #9C776D;
-            height: 100%;
+            /* height: 100%; */
+            height: 100vh;
             max-height: 100vh;
             /* heightとmax-heightで画面いっぱいかつスクロール固定を実現 */
         }
@@ -32,7 +33,7 @@
         }
 
         .copyright {
-            margin-top: 20%;
+            margin-top: 10%;
 
         }
 
@@ -41,6 +42,15 @@
             text-decoration: underline;
             color: white;
 
+        }
+
+        .wrap {
+            /* overflow: hidden; */
+        }
+
+        .logo-img {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -85,5 +95,6 @@
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
     MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
 
-    <div class="container-fluid back-black">
-        <div class="row">
+    <div class="wrap">
+        <div class="container-fluid back-black">
+            <div class="row">

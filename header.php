@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/destyle.css">
     <?php wp_head(); ?>
     <style>
+        header {
+            height: 100%
+        }
+
         .sidebar_fixed {
             position: fixed;
             top: 0px;

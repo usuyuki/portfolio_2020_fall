@@ -16,7 +16,7 @@
         </div>
         <div class="latest-coffee text-white d-flex mb-4">
             <?php
-        $coffee_posts = get_posts('post_type=book&posts_per_page=5');
+        $coffee_posts = get_posts('post_type=coffee&posts_per_page=5');
         if ( !empty($coffee_posts) ): ?>
 
             <?php 
@@ -27,7 +27,7 @@
             <!-- 画像 -->
             <div class="mr-3">
                 <?php 
-            $image = get_field('coffee_img');
+            $image = get_field('work_img');
             $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
             if( $image ) {
                 echo wp_get_attachment_image( $image, $size );
@@ -41,38 +41,7 @@
             <!-- 詳細情報 -->
             <section class="text-decoration-none ">
 
-                <div class="coffee-name">
-                    <h2 class="text-decoration-none text-white h4 text-center">
-                        <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                    </h2>
-                </div>
-                <div class="">
 
-
-                    <table class="table table-striped text-white text-center table-bordered">
-                        <thead>
-                            <tr>
-
-                                <th scope="col">産地</th>
-                                <th scope="col">味の種類</th>
-                                <th scope="col">焙煎</th>
-                                <th scope="col">購入店</th>
-                                <th scope="col">購入日</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-
-                                <td><?php  the_field ("coffee_country" ); ?></td>
-                                <td><?php the_field ( "coffee_taste" ); ?></td>
-                                <td><?php the_field ( "coffee_roast" ); ?></td>
-                                <td><?php the_field ( "coffee_store" ); ?></td>
-                                <td><?php the_field ( "coffee_date" ); ?></td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
 
             </section>
 
@@ -106,7 +75,7 @@
                 <div class="">
                     <!-- 画像 -->
                     <?php 
-            $image = get_field('coffee_img');
+            $image = get_field('work_img');
             $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
             if( $image ) {
                 echo wp_get_attachment_image( $image, $size );
@@ -120,9 +89,10 @@
                 <h2 class="text-decoration-none text-white h5 text-center">
                     <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
                 </h2>
-                <p>言語:<?php  the_field ("coffee_country" ); ?></p>
+                <p>言語:<?php  the_field ("work_tech" ); ?></p>
+                <p>種類:<?php  the_field ("work_kind" ); ?></p>
 
-                <p>日:<?php the_field ( "work_date" ); ?></p>
+                <p><?php the_field ( "work_start" ); ?></p>
 
             </section>
 

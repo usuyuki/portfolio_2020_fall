@@ -3,7 +3,7 @@
 <div class="col-10">
     <div class="main text-center mt-3 mb-5">
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
-        <img src="<?php echo get_template_directory_uri(); ?>/img/station/coffee.svg" alt="珈琲ページ">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/station/coffee.png" alt="珈琲ページ">
     </div>
 
     <!-- 最近買った豆 -->

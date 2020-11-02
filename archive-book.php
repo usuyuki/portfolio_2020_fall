@@ -3,7 +3,7 @@
 <div class="col-10">
     <div class="main text-center mt-3 mb-5">
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
-        <img src="<?php echo get_template_directory_uri(); ?>/img/station/work.png" alt="制作物ページ">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/station/book.png" alt="読書ページ">
     </div>
 
     <!-- 最近買った豆 -->
@@ -12,7 +12,7 @@
 
         <div class="">
 
-            <p class="h3 text-white">制作</p>
+            <p class="h3 text-white">最近読んだ本</p>
         </div>
         <div class="latest-coffee text-white d-flex mb-4">
             <?php

@@ -120,9 +120,9 @@
                 <h2 class="text-decoration-none text-white h5 text-center">
                     <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
                 </h2>
-                <p>産地:<?php  the_field ("coffee_country" ); ?></p>
+                <p>言語:<?php  the_field ("coffee_country" ); ?></p>
 
-                <p>購入日:<?php the_field ( "coffee_date" ); ?></p>
+                <p>日:<?php the_field ( "work_date" ); ?></p>
 
             </section>
 

@@ -38,7 +38,7 @@
             </div>
 
             <div class="side-menu-link row text-center my-5">
-                <a href="/hobby" class="text-decoration-none col">
+                <a href="/like" class="text-decoration-none col">
                     <div class="side-menu-link-icon mb-2">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo/loyalty-24px.svg">
                     </div>

@@ -62,11 +62,11 @@
                         <thead>
                             <tr>
 
-                                <th scope="col">産地</th>
-                                <th scope="col">味の種類</th>
-                                <th scope="col">焙煎</th>
-                                <th scope="col">購入店</th>
-                                <th scope="col">購入日</th>
+                                <th scope="col" class="text-center">産地</th>
+                                <th scope="col" class="text-center">味の種類</th>
+                                <th scope="col" class="text-center">焙煎</th>
+                                <th scope="col" class="text-center">購入店</th>
+                                <th scope="col" class="text-center">購入日</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -102,7 +102,7 @@
 
 
 
-        <div class="d-flex flex-wrap  mt-4">
+        <div class="d-flex flex-wrap  justify-content-around mt-4">
 
 
             <?php
@@ -121,7 +121,7 @@ $posts = get_posts($args);
                 foreach( $posts as $post ): setup_postdata( $post );
                  
             ?>
-            <section class="text-white text-decoration-none text-center m-3  " style="flex-basis:30%">
+            <section class="text-white text-decoration-none text-center my-5  " style="flex-basis:30%">
 
                 <div class="">
                     <!-- 画像 -->
@@ -137,7 +137,7 @@ $posts = get_posts($args);
             ?>
 
                 </div>
-                <h2 class="text-decoration-none text-white h5 text-center">
+                <h2 class="text-decoration-none text-white h5 text-center mt-2 mb-1">
                     <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
                 </h2>
                 <p>産地:<?php  the_field ("coffee_country" ); ?></p>

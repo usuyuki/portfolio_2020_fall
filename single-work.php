@@ -35,13 +35,20 @@
                 <article class=" text-white text-left my-4 mx-auto py-3 px-1 border-white border" style="width:40%;">
                     <p><?php the_content(); ?></p>
                 </article>
-                <div class="text-center">
+                <div class="text-center mt-3">
                     <!-- 画像 -->
                     <?php 
                         $image = get_field('work_img');
                         $size = 'large'; // (thumbnail, medium, large, full or custom size)
                         if( $image ) {
                             echo wp_get_attachment_image( $image, $size );
+                        }
+                        else{
+                            if( get_field('work-video') ){
+                                echo $embed_code = wp_oembed_get( get_field('work-video') ); 
+
+                            }
+                            
                         }
                     ?>
 

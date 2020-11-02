@@ -72,7 +72,7 @@
             max-height: 100%;
         }
 
-        .box-like {
+        .box-hobby {
             background-color: #8d1e47;
             border: 2px dashed #fff;
             border-radius: 8px;

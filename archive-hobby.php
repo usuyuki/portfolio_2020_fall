@@ -51,7 +51,7 @@
                 <!-- 詳細情報 -->
                 <div class="col-9">
                     <!-- <div class="text-decoration-none text-white row text-right"> -->
-                    <div class="row">
+                    <div class="row h2">
 
                         <p><?php the_title(); ?></p>
                     </div>

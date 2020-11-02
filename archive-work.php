@@ -6,7 +6,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/img/station/work.png" alt="制作物ページ">
     </div>
 
-    <!-- 最近買った豆 -->
+    <!-- 日付順でソート -->
     <div class="mx-auto pt-4">
 
 
@@ -34,7 +34,8 @@
                 <!-- 画像 -->
                 <div class="col-3">
                     <div class="work-img">
-                        <?php 
+                        <a href="<?php echo get_permalink(); ?>">
+                            <?php 
                         $image = get_field('work_img');
                         $size = 'thumbnail_medium'; // (thumbnail, medium, large, full or custom size)
                         if( $image ) {
@@ -48,6 +49,7 @@
                             
                         }
                         ?>
+                        </a>
                     </div>
 
                 </div>

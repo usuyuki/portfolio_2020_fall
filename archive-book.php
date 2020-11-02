@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
-<div class="col-10">
+<div class="col-10 ">
     <div class="main text-center mt-3 mb-5">
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
         <img src="<?php echo get_template_directory_uri(); ?>/img/station/book.png" alt="読書ページ">

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
-<div class="col-10">
+<div class="col-10 ">
     <div class="main text-center mt-3 mb-5">
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
         <img src="<?php echo get_template_directory_uri(); ?>/img/station/coffee.png" alt="珈琲ページ">
@@ -35,14 +35,15 @@
 
             <!-- 画像 -->
             <div class="mr-3">
-                <?php 
-            $image = get_field('coffee_img');
-            $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-            if( $image ) {
-                echo wp_get_attachment_image( $image, $size );
-            }
-            ?>
-
+                <a href="<?php echo get_permalink(); ?>">
+                    <?php 
+                    $image = get_field('coffee_img');
+                    $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+                    if( $image ) {
+                        echo wp_get_attachment_image( $image, $size );
+                    }
+                ?>
+                </a>
             </div>
 
 
@@ -125,16 +126,18 @@ $posts = get_posts($args);
 
                 <div class="">
                     <!-- 画像 -->
-                    <?php 
-            $image = get_field('coffee_img');
-            $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-            if( $image ) {
-                echo wp_get_attachment_image( $image, $size );
-            }
-            else{
-                echo  wp_get_attachment_image( 126, $size );
-            }
-            ?>
+                    <a href="<?php echo get_permalink(); ?>">
+                        <?php 
+                            $image = get_field('coffee_img');
+                            $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+                            if( $image ) {
+                                echo wp_get_attachment_image( $image, $size );
+                            }
+                            else{
+                                echo  wp_get_attachment_image( 126, $size );
+                            }
+                        ?>
+                    </a>
 
                 </div>
                 <h2 class="text-decoration-none text-white h5 text-center mt-2 mb-1">

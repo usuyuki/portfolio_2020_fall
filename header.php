@@ -71,6 +71,16 @@
             max-width: 100%;
             max-height: 100%;
         }
+
+        .box-like {
+            background-color: #8d1e47;
+            border: 2px dashed #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 0 4px #8d1e47;
+            color: #fff;
+            margin: 2em 0;
+            padding: 2em;
+        }
     </style>
 </head>
 

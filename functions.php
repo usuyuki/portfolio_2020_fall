@@ -34,3 +34,7 @@ return $html;
 }
 
 add_filter('excerpt_more', 'new_excerpt_more');
+
+
+//add_image_size( [画像サイズの名前], [幅], [高さ], [切り抜きするか（初期値:False）] );
+add_image_size('thumbnail_medium',300,300,false);

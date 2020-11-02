@@ -32,21 +32,23 @@
             <div class="row border mx-5 my-4 py-4 rounded">
 
                 <!-- 画像 -->
-                <div class=" col-3">
-                    <?php 
-            $image = get_field('work_img');
-            $size = 'medium'; // (thumbnail, medium, large, full or custom size)
-            if( $image ) {
-                echo wp_get_attachment_image( $image, $size );
-            }
-            ?>
+                <div class="col-3">
+                    <div class="work-img">
+                        <?php 
+                        $image = get_field('work_img');
+                        $size = 'thumbnail_medium'; // (thumbnail, medium, large, full or custom size)
+                        if( $image ) {
+                            echo wp_get_attachment_image( $image, $size );
+                        }
+                        ?>
+                    </div>
 
                 </div>
 
 
 
                 <!-- 詳細情報 -->
-                <section class="text-decoration-none col-9">
+                <div class="col-9">
                     <div class="text-decoration-none text-white row text-right">
                         <a class="h4 " href="<?php echo get_permalink(); ?>">
                             "<?php the_title(); ?>"</a>
@@ -64,13 +66,13 @@
                             <p class="p-2 border border-primary rounded-pill "><?php the_field ( "work_kind" ); ?></p>
                         </div>
                     </div>
-                    <div class=" mt-3">
+                    <div class=" row mt-3 pl-0 pr-5">
 
                         <p><?php the_excerpt(); ?></p>
                     </div>
 
 
-                </section>
+                </div>
             </div>
             <?php 
                 endforeach;

@@ -56,6 +56,13 @@
             width: 100%;
             height: auto;
         }
+
+        .work-img img {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        }
     </style>
 </head>
 

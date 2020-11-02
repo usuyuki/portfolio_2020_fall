@@ -10,104 +10,78 @@
     <div class="mx-auto pt-4">
 
 
-        <div class="">
 
-            <p class="h3 text-white">制作</p>
-        </div>
-        <div class="latest-coffee text-white d-flex mb-4">
+        <div class="latest-coffee text-white  mb-4 ">
             <?php
-        $coffee_posts = get_posts('post_type=coffee&posts_per_page=5');
-        if ( !empty($coffee_posts) ): ?>
+                $args = array(
+                    'post_type' => 'work',
+                    'numberposts' => -1,
+                    'post_status' => 'publish',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'work_start', //ACFのフィールド名
+                    'order' => 'DESC'
+                );
 
-            <?php 
-        foreach ( $coffee_posts as $post ):
-            setup_postdata($post); ?>
+                $posts = get_posts($args);
 
-
-            <!-- 画像 -->
-            <div class="mr-3">
-                <?php 
-            $image = get_field('work_img');
-            $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-            if( $image ) {
-                echo wp_get_attachment_image( $image, $size );
-            }
-            ?>
-
-            </div>
-
-
-
-            <!-- 詳細情報 -->
-            <section class="text-decoration-none ">
-
-
-
-            </section>
-
-            <?php endforeach;
-        wp_reset_postdata(); ?>
-
-            <?php endif; ?>
-
-
-        </div>
-
-    </div>
-    <!-- 購入した珈琲豆一覧 -->
-    <div class="post border-top border-white">
-
-
-        <!-- <p class="text-white text-center h1">購入した珈琲豆</p> -->
-
-
-
-        <div class="d-flex flex-wrap  mt-4">
-
-
-            <?php 
-            if ( have_posts() ) :
-                while ( have_posts() ) : the_post();
+                if ( $posts ):
+                    foreach( $posts as $post ): setup_postdata( $post );
                  
             ?>
-            <section class="text-white text-decoration-none text-center m-3  " style="flex-basis:30%">
 
-                <div class="">
-                    <!-- 画像 -->
+            <div class="row border mx-5 my-4 py-4 rounded">
+
+                <!-- 画像 -->
+                <div class=" col-3">
                     <?php 
             $image = get_field('work_img');
-            $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+            $size = 'medium'; // (thumbnail, medium, large, full or custom size)
             if( $image ) {
                 echo wp_get_attachment_image( $image, $size );
-            }
-            else{
-                echo  wp_get_attachment_image( 126, $size );
             }
             ?>
 
                 </div>
-                <h2 class="text-decoration-none text-white h5 text-center">
-                    <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                </h2>
-                <p>言語:<?php  the_field ("work_tech" ); ?></p>
-                <p>種類:<?php  the_field ("work_kind" ); ?></p>
 
-                <p><?php the_field ( "work_start" ); ?></p>
 
-            </section>
 
+                <!-- 詳細情報 -->
+                <section class="text-decoration-none col-9">
+                    <div class="text-decoration-none text-white row text-right">
+                        <a class="h4 " href="<?php echo get_permalink(); ?>">
+                            "<?php the_title(); ?>"</a>
+
+
+                        <div class="detail mx-5 my-auto">
+                            <p class="text-warning">公開・デプロイ日<?php the_field ( "work_start" ); ?></p>
+
+                        </div>
+                        <div class="detail mx-5 my-auto ">
+                            <p class="text-info">使用技術:<?php the_field ( "work_tech" ); ?></p>
+
+                        </div>
+                        <div class="work-kind ml-5 ">
+                            <p class="p-2 border border-primary rounded-pill "><?php the_field ( "work_kind" ); ?></p>
+                        </div>
+                    </div>
+                    <div class=" mt-3">
+
+                        <p><?php the_excerpt(); ?></p>
+                    </div>
+
+
+                </section>
+            </div>
             <?php 
-                endwhile;
+                endforeach;
             endif;
             ?>
 
+
         </div>
 
-
-
-
-
     </div>
+
 </div><!-- メインのcolのdiv閉じ -->
 
 

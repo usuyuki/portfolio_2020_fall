@@ -16,12 +16,21 @@
         </div>
         <div class="latest-coffee text-white d-flex mb-4">
             <?php
-        $coffee_posts = get_posts('post_type=coffee&posts_per_page=1');
-        if ( !empty($coffee_posts) ): ?>
+                $args = array(
+                    'post_type' => 'coffee',
+                    'numberposts' => 1,
+                    'post_status' => 'publish',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'coffee_date', //ACFのフィールド名
+                    'order' => 'DESC'
+                );
 
-            <?php 
-        foreach ( $coffee_posts as $post ):
-            setup_postdata($post); ?>
+                $posts = get_posts($args);
+
+                if ( $posts ):
+                    foreach( $posts as $post ): setup_postdata( $post );
+                 
+            ?>
 
 
             <!-- 画像 -->
@@ -76,10 +85,10 @@
 
             </section>
 
-            <?php endforeach;
-        wp_reset_postdata(); ?>
-
-            <?php endif; ?>
+            <?php 
+                endforeach;
+            endif;
+            ?>
 
 
         </div>
@@ -96,9 +105,20 @@
         <div class="d-flex flex-wrap  mt-4">
 
 
-            <?php 
-            if ( have_posts() ) :
-                while ( have_posts() ) : the_post();
+            <?php
+$args = array(
+    'post_type' => 'coffee',
+    'numberposts' => -1,
+    'post_status' => 'publish',
+    'orderby' => 'meta_value',
+    'meta_key' => 'coffee_date', //ACFのフィールド名
+    'order' => 'DESC'
+);
+
+$posts = get_posts($args);
+
+            if ( $posts ):
+                foreach( $posts as $post ): setup_postdata( $post );
                  
             ?>
             <section class="text-white text-decoration-none text-center m-3  " style="flex-basis:30%">
@@ -127,7 +147,7 @@
             </section>
 
             <?php 
-                endwhile;
+                endforeach;
             endif;
             ?>
 

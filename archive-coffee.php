@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
 <div class="col-md-10 ">
-    <div class="ekimeihyou mt-3 mb-5 ">
+    <div class="ekimeihyou text-center mt-3 mb-5">
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
         <img src="<?php echo get_template_directory_uri(); ?>/img/station/coffee.png" alt="珈琲ページ">
     </div>

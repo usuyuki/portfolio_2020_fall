@@ -200,19 +200,92 @@
                             Menu
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="/work">
+                            <div class="d-flex my-2">
+                                <div class="ml-2">
 
-                                制作
-                            </a>
-                            <a class="dropdown-item" href="/hobby">趣味</a>
-                            <a class="dropdown-item" href="/aboutme">AboutMe</a>
-                            <a class="dropdown-item" href="/coffee">珈琲</a>
+                                    <img
+                                        src="<?php echo get_template_directory_uri(); ?>/img/logo/card_giftcard-24px.svg">
+
+                                </div>
+                                <div class="">
+                                    <a class="dropdown-item mt-2" href="/work">
+
+                                        制作
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex my-2">
+                                <div class="ml-2">
+
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo/loyalty-24px.svg">
+
+                                </div>
+                                <div class="">
+                                    <a class="dropdown-item mt-2" href="/hobby">
+
+                                        趣味
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex my-2">
+                                <div class="ml-2">
+
+                                    <img
+                                        src="<?php echo get_template_directory_uri(); ?>/img/logo/account_box-24px.svg">
+
+                                </div>
+                                <div class="">
+                                    <a class="dropdown-item mt-2" href="/aboutme">
+
+                                        AboutMe
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="d-flex my-2">
+                                <div class="ml-2">
+
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo/local_cafe-24px.svg">
+
+                                </div>
+                                <div class="">
+                                    <a class="dropdown-item mt-2" href="/coffee">
+
+                                        珈琲
+                                    </a>
+                                </div>
+
+                            </div>
+
+
+
+
+
                             <div class="dropdown-divider"></div>
-                            <a style="font-weight:bold;" class="dropdown-item" href="/">HOME</a>
+
+                            <div class="d-flex my-2">
+                                <div class="ml-2">
+
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo/home-24px.svg">
+
+                                </div>
+                                <div class="">
+                                    <a class="dropdown-item mt-2" href="/">
+
+                                        ホーム
+                                    </a>
+                                </div>
+
+                            </div>
                             <div class="dropdown-divider"></div>
-                            <a style="font-size:0.7em;" class="dropdown-item"
+                            <a style="font-size:0.9em;" class="dropdown-item"
                                 href="https://twitter.com/usuyuki26">Twitter</a>
-                            <a style="font-size:0.7em;" class="dropdown-item"
+                            <a style="font-size:0.9em;" class="dropdown-item"
                                 href="https://github.com/Usuyuki">GitHub</a>
                         </div>
                     </div>

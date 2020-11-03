@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
 <div class="col-10" style="min-height:100vh;">
-    <div class="main text-white text-center  ">
+    <div class="for-page text-white text-center">
         <?php 
             if ( have_posts() ) :
             while ( have_posts() ) : the_post();

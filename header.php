@@ -95,6 +95,23 @@
             margin: 2em 0;
             padding: 2em;
         }
+
+        .for-page {}
+
+        .for-page h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 1% 0;
+            border-top: 1px solid white;
+        }
+
+        .for-page h3 {
+            font-size: 1em;
+            font-weight: bold;
+            margin: 1% 0;
+            border-top: 1px solid white;
+
+        }
     </style>
 </head>
 

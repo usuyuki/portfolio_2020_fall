@@ -49,12 +49,12 @@
             </div>
 
             <div class="side-menu-link row text-center my-5">
-                <a href="/book" class="text-decoration-none col">
+                <a href="/aboutme" class="text-decoration-none col">
                     <div class="side-menu-link-icon mb-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/book-24px.svg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/account_box-24px.svg">
                     </div>
                     <div class="side-menu-link-name text-black h5">
-                        <p>読書</p>
+                        <p>AboutMe</p>
                     </div>
                 </a>
             </div>

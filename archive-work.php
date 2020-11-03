@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
-<div class="col-10">
-    <div class="main text-center mt-3 mb-5">
+<div class="col-md-10">
+    <div class="ekimeihyou text-center mt-3 mb-5">
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
         <img src="<?php echo get_template_directory_uri(); ?>/img/station/work.png" alt="制作物ページ">
     </div>
@@ -33,7 +33,7 @@
 
                 <!-- 画像 -->
                 <div class="col-3">
-                    <div class="work-img">
+                    <div class="work-img ">
                         <a href="<?php echo get_permalink(); ?>">
                             <?php 
                         $image = get_field('work_img');

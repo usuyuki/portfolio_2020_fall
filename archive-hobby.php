@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
-<div class="col-10">
-    <div class="main text-center mt-3 mb-5">
+<div class="col-md-10 ">
+    <div class="ekimeihyou text-center mt-3 mb-5">
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
         <img src="<?php echo get_template_directory_uri(); ?>/img/station/hobby.png" alt="趣味ページ">
     </div>
@@ -40,6 +40,9 @@
                         if( $image ) {
                             echo wp_get_attachment_image( $image, $size );
                         }
+                        else{
+                            echo  wp_get_attachment_image( 126, $size );
+                        }
    
                         ?>
                     </div>
@@ -64,7 +67,7 @@
 
                     <div class="row mt-2">
                         <div class="detail mx-5 mt-3 text-right">
-                            <p class="text-warning">習熟度:<?php the_field ( "hobby_depth" ); ?></p>
+                            <p class="text-warning">好き度:<?php the_field ( "hobby_depth" ); ?></p>
 
                         </div>
 

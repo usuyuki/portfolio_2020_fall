@@ -1,11 +1,11 @@
-<div class="col-2">
+<div class="d-none d-md-block col-2">
 
     <!-- ここからサイドバー -->
-    <div class="sidebar_fixed">
+    <div class="sidebar_fixed px-0">
 
 
 
-        <div class="side-logo  pt-5">
+        <div class="side-logo pr-4 pt-5 fit-img">
             <a href="/" class="text-decoration-none">
                 <img class="logo-img"
                     src="<?php echo get_template_directory_uri(); ?>/img/logo/portfolio_title20201027.png">
@@ -92,7 +92,11 @@
 
 
         </div>
+
         <div class="copyright text-black-40 text-center ">
+            <a href="/privacy-policy">
+                <p style="font-size:0.6em;">プライバシーポリシー</p>
+            </a>
             <p>copyright 2020 usuyuki</p>
         </div>
     </div>

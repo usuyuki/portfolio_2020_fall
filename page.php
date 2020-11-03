@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
-<div class="col-10" style="min-height:100vh;">
+<div class="col-md-10" style="min-height:100vh;">
     <div class="for-page text-white text-center">
         <?php 
             if ( have_posts() ) :

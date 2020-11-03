@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
-<div class="col-10" style="min-height:100vh;">
+<div class="col-md-10" style="min-height:100vh;">
     <div class="main text-white text-center  ">
         <div class="row">
             <img class="my-3 " src="<?php echo get_template_directory_uri(); ?>/img/bg/coffee_bg.jpg" width="1000px"

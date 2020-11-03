@@ -75,6 +75,7 @@
             object-fit: contain;
             max-width: 100%;
             max-height: 100%;
+            margin: auto 0;
         }
 
 
@@ -111,6 +112,29 @@
             margin: 1% 0;
             border-top: 1px solid white;
 
+        }
+
+        figcaption {
+            font-size: 0.5em;
+            text-align: center;
+        }
+
+        .ekimeihyou img {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .table {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .fit-img img {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
         }
     </style>
 </head>
@@ -157,4 +181,45 @@
 
     <div class="wrap">
         <div class="container-fluid back-black">
+
+
+            <!-- スマホ用ヘッダー -->
+            <nav class="row navbar navbar-dark bg-white d-flex 	d-block d-md-none">
+                <div class="side-logo  fit-img " style="width:70%;">
+                    <a href="/" class="text-decoration-none">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/portfolio_title20201027.png">
+                    </a>
+                </div>
+
+
+                <div>
+                    <!-- Default dropleft button -->
+                    <div class="btn-group dropleft bg-black">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/work">
+
+                                制作
+                            </a>
+                            <a class="dropdown-item" href="/hobby">趣味</a>
+                            <a class="dropdown-item" href="/aboutme">AboutMe</a>
+                            <a class="dropdown-item" href="/coffee">珈琲</a>
+                            <div class="dropdown-divider"></div>
+                            <a style="font-weight:bold;" class="dropdown-item" href="/">HOME</a>
+                            <div class="dropdown-divider"></div>
+                            <a style="font-size:0.7em;" class="dropdown-item"
+                                href="https://twitter.com/usuyuki26">Twitter</a>
+                            <a style="font-size:0.7em;" class="dropdown-item"
+                                href="https://github.com/Usuyuki">GitHub</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </nav>
+
+
             <div class="row">

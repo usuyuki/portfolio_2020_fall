@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
-<div class="col-10" style="min-height:100vh;">
+<div class="col-md-10" style="min-height:100vh;">
     <div class="main text-white">
         <div class="post">
             <h1 class="h1"><?php the_title() ?></h1>

@@ -17,7 +17,7 @@
                     <p class="my-2">購入日:<?php the_field ( "coffee_date" ); ?></p>
                     <p class="my-2">購入店:<?php the_field ( "coffee_store" ); ?></p>
                 </div>
-                <div class="text-center">
+                <div class="text-center fit-img bg-black">
                     <!-- 画像 -->
                     <?php 
                         $image = get_field('coffee_img');

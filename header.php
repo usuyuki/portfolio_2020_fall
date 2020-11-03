@@ -125,7 +125,7 @@
             max-height: 100%;
         }
 
-        .table {
+        .table-aaa {
             object-fit: contain;
             max-width: 100%;
             max-height: 100%;

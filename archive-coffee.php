@@ -6,15 +6,15 @@
         <img src="<?php echo get_template_directory_uri(); ?>/img/station/coffee.png" alt="珈琲ページ">
     </div>
 
-    <!-- 最近買った豆 -->
-    <div class="mx-auto pt-4">
+    <div class="mx-auto pt-4 ">
 
 
         <div class="">
 
             <p class="h3 text-white">最近購入した豆</p>
         </div>
-        <div class="latest-coffee text-white d-flex mb-4">
+        <!-- 最近買った豆 PC用！！-->
+        <div class="latest-coffee text-white d-flex mb-4 d-none d-md-block">
             <?php
                 $args = array(
                     'post_type' => 'coffee',
@@ -34,7 +34,91 @@
 
 
             <!-- 画像 -->
-            <div class="mr-3">
+            <div class="mr-3  d-none d-md-block">
+                <a href="<?php echo get_permalink(); ?>">
+                    <?php 
+                    $image = get_field('coffee_img');
+                    $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+                    if( $image ) {
+                        echo wp_get_attachment_image( $image, $size );
+                    }
+                    else{
+                        echo  wp_get_attachment_image( 126, $size );
+                    }
+                ?>
+                </a>
+            </div>
+
+
+
+            <!-- 詳細情報 -->
+            <div class="text-decoration-none  d-none d-md-block">
+
+                <div class="coffee-name">
+                    <h2 class="text-decoration-none text-white h4 text-center">
+                        <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+                    </h2>
+                </div>
+                <div class="">
+
+
+                    <table class="table table-striped text-white text-center table-bordered">
+                        <thead>
+                            <tr>
+
+                                <th scope="col" class="text-center">産地</th>
+                                <th scope="col" class="text-center">味の種類</th>
+                                <th scope="col" class="text-center">焙煎</th>
+                                <th scope="col" class="text-center">購入店</th>
+                                <th scope="col" class="text-center">購入日</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+
+                                <td><?php  the_field ("coffee_country" ); ?></td>
+                                <td><?php the_field ( "coffee_taste" ); ?></td>
+                                <td><?php the_field ( "coffee_roast" ); ?></td>
+                                <td><?php the_field ( "coffee_store" ); ?></td>
+                                <td><?php the_field ( "coffee_date" ); ?></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <?php 
+                endforeach;
+            endif;
+            ?>
+
+
+        </div>
+
+        <!--最近買った豆 スマホ用！！ -->
+        <div class="latest-coffee text-white d-flex mb-4 d-block d-md-none flex-column">
+            <?php
+                $args = array(
+                    'post_type' => 'coffee',
+                    'numberposts' => 1,
+                    'post_status' => 'publish',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'coffee_date', //ACFのフィールド名
+                    'order' => 'DESC'
+                );
+
+                $posts = get_posts($args);
+
+                if ( $posts ):
+                    foreach( $posts as $post ): setup_postdata( $post );
+                 
+            ?>
+
+
+            <!-- 画像 -->
+            <div class="mr-3 text-center">
                 <a href="<?php echo get_permalink(); ?>">
                     <?php 
                     $image = get_field('coffee_img');

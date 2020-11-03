@@ -11,7 +11,7 @@
 
 
 
-        <div class="latest-coffee text-white  mb-4 ">
+        <div class=" text-white  mb-4 ">
             <?php
                 $args = array(
                     'post_type' => 'work',
@@ -33,7 +33,7 @@
 
                 <!-- 画像 -->
                 <div class="col-3">
-                    <div class="work-img ">
+                    <div class="work-img d-none d-md-block">
                         <a href="<?php echo get_permalink(); ?>">
                             <?php 
                         $image = get_field('work_img');

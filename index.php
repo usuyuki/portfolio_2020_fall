@@ -2,10 +2,13 @@
 <!-- ここからメインコンテンツ -->
 <div class="col-md-10" style="min-height:100vh;">
     <div class="main text-white text-center  ">
-        <div class="row">
-            <img class="my-3 " src="<?php echo get_template_directory_uri(); ?>/img/bg/coffee_bg.jpg" width="1000px"
-                height="562px">
-            <p class="h1 mt-4 ml-4 text-center">This is Usuyuki Portfolio</p>
+        <div class="row text-center fit-img">
+            <img class="my-3 mt-5 p-3 mx-auto rounded"
+                src="<?php echo get_template_directory_uri(); ?>/img/bg/coffee_bg.jpg">
+
+        </div>
+        <div class="row text-center">
+            <p class="h1 m-3  mx-auto">This is Usuyuki Portfolio</p>
         </div>
 
         <div class="row d-flex justify-content-around">

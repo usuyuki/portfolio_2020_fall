@@ -12,7 +12,7 @@
             </a>
         </div>
 
-        <div class="side-menu flex-column">
+        <div class="side-menu flex-column kosugi">
             <!-- ふれっくすぼっくす使った -->
 
             <div class="side-menu-link row text-center my-5">

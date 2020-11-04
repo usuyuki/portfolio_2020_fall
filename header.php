@@ -23,6 +23,7 @@
 
     <!-- googleフォント読み込み -->
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
 
 
     <!-- bootstrap4読み込み -->
@@ -42,6 +43,10 @@
 
         }
 
+        .kosugi {
+            font-family: 'Kosugi', sans-serif;
+
+        }
 
         .sidebar_fixed {
             position: fixed;
@@ -205,7 +210,7 @@
 
                 <div>
                     <!-- Default dropleft button -->
-                    <div class="btn-group dropleft bg-black">
+                    <div class="btn-group dropleft bg-black kosugi">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             Menu

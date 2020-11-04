@@ -8,18 +8,18 @@
             <section>
 
                 <section class="text-decoration-none mt-3">
-                    <div class="text-decoration-none  d-flex mx-auto justify-content-center">
+                    <div class="text-decoration-none  d-flex mx-auto justify-content-center flex-wrap">
 
 
-                        <div class="detail mx-3 my-auto">
+                        <div class="detail mx-3 my-3">
                             <p class="text-warning">公開・デプロイ日<?php the_field ( "work_start" ); ?></p>
 
                         </div>
-                        <div class="detail mx-3 my-auto ">
-                            <p class="text-info">使用技術:<?php the_field ( "work_tech" ); ?></p>
+                        <div class="detail mx-3 my-3 ">
+                            <p class="text-info text-center">使用技術:<?php the_field ( "work_tech" ); ?></p>
 
                         </div>
-                        <div class="work-kind mx-3 my-auto ">
+                        <div class="work-kind mx-3 my-3 ">
                             <p class=" text-danger ">種類:<?php the_field ( "work_kind" ); ?></p>
                         </div>
                     </div>
@@ -32,10 +32,10 @@
 
 
                 </section>
-                <article class=" text-white text-left my-4 mx-auto py-3 px-1 border-white border" style="width:40%;">
+                <article class=" text-white text-left my-4 mx-auto py-3 pl-1 border-white border" style="width:70%;">
                     <p><?php the_content(); ?></p>
                 </article>
-                <div class="text-center mt-3">
+                <div class="text-center mt-3 fit-img">
                     <!-- 画像 -->
                     <?php 
                         $image = get_field('work_img');

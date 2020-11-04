@@ -301,10 +301,10 @@
                             <a style="font-size:0.6em;" class="dropdown-item" href="/privacy-policy">プライバシーポリシー</a>
                             <a href="/privacy-policy">
                                 <div class="dropdown-divider"></div>
-                                <a style="font-size:0.9em;" class="dropdown-item"
-                                    href="https://twitter.com/usuyuki26">Twitter</a>
-                                <a style="font-size:0.9em;" class="dropdown-item"
-                                    href="https://github.com/Usuyuki">GitHub</a>
+                                <a style="font-size:0.9em;" class="dropdown-item" href="https://twitter.com/usuyuki26"
+                                    target=”_blank”>Twitter</a>
+                                <a style="font-size:0.9em;" class="dropdown-item" href="https://github.com/Usuyuki"
+                                    target=”_blank”>GitHub</a>
 
                         </div>
                     </div>

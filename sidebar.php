@@ -77,18 +77,18 @@
         <div class="side-contact row d-flex justify-content-around mx-1">
 
 
-            <div class="side-menu-sns  text-center"><a href="https://twitter.com/usuyuki26"
-                    class="text-decoration-none">
+            <div class="side-menu-sns  text-center"><a href="https://twitter.com/usuyuki26" class="text-decoration-none"
+                    target=”_blank”>
                     <p class="text-black">Twitter</p>
                 </a>
             </div>
             <div class="side-menu-sns text-center"><a href="https://github.com/Usuyuki" class="text-decoration-none">
-                    <p class="text-black">GitHub</p>
+                    <p class="text-black" target=”_blank”>GitHub</p>
                 </a>
             </div>
             <div class="side-menu-sns  text-center"><a href="https://www.youtube.com/channel/UCI4-1pvH-0XdwfKZe4WBPhQ"
                     class="text-decoration-none">
-                    <p class="text-black">YouTube</p>
+                    <p class="text-black" target=”_blank”>YouTube</p>
                 </a>
             </div>
 

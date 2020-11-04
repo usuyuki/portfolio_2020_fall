@@ -247,21 +247,7 @@
 
                             </div>
 
-                            <div class="d-flex my-2">
-                                <div class="ml-2">
 
-                                    <img
-                                        src="<?php echo get_template_directory_uri(); ?>/img/logo/account_box-24px.svg">
-
-                                </div>
-                                <div class="">
-                                    <a class="dropdown-item mt-2" href="/aboutme">
-
-                                        AboutMe
-                                    </a>
-                                </div>
-
-                            </div>
 
                             <div class="d-flex my-2">
                                 <div class="ml-2">
@@ -278,7 +264,21 @@
 
                             </div>
 
+                            <div class="d-flex my-2">
+                                <div class="ml-2">
 
+                                    <img
+                                        src="<?php echo get_template_directory_uri(); ?>/img/logo/account_box-24px.svg">
+
+                                </div>
+                                <div class="">
+                                    <a class="dropdown-item mt-2" href="/aboutme">
+
+                                        個人
+                                    </a>
+                                </div>
+
+                            </div>
 
 
 
@@ -298,11 +298,14 @@
                                 </div>
 
                             </div>
-                            <div class="dropdown-divider"></div>
-                            <a style="font-size:0.9em;" class="dropdown-item"
-                                href="https://twitter.com/usuyuki26">Twitter</a>
-                            <a style="font-size:0.9em;" class="dropdown-item"
-                                href="https://github.com/Usuyuki">GitHub</a>
+                            <a style="font-size:0.6em;" class="dropdown-item" href="/privacy-policy">プライバシーポリシー</a>
+                            <a href="/privacy-policy">
+                                <div class="dropdown-divider"></div>
+                                <a style="font-size:0.9em;" class="dropdown-item"
+                                    href="https://twitter.com/usuyuki26">Twitter</a>
+                                <a style="font-size:0.9em;" class="dropdown-item"
+                                    href="https://github.com/Usuyuki">GitHub</a>
+
                         </div>
                     </div>
 

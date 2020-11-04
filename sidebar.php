@@ -48,16 +48,7 @@
                 </a>
             </div>
 
-            <div class="side-menu-link row text-center my-5">
-                <a href="/aboutme" class="text-decoration-none col">
-                    <div class="side-menu-link-icon mb-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/account_box-24px.svg">
-                    </div>
-                    <div class="side-menu-link-name text-black h5">
-                        <p>AboutMe</p>
-                    </div>
-                </a>
-            </div>
+
 
             <div class="side-menu-link row text-center my-5">
                 <a href="/coffee" class="text-decoration-none col">
@@ -70,7 +61,16 @@
                 </a>
             </div>
 
-
+            <div class="side-menu-link row text-center my-5">
+                <a href="/aboutme" class="text-decoration-none col">
+                    <div class="side-menu-link-icon mb-2">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/account_box-24px.svg">
+                    </div>
+                    <div class="side-menu-link-name text-black h5">
+                        <p>個人</p>
+                    </div>
+                </a>
+            </div>
 
 
         </div>

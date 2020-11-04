@@ -74,21 +74,23 @@
 
 
         </div>
-        <div class="side-contact row">
+        <div class="side-contact row d-flex justify-content-around mx-1">
 
 
-            <div class="side-menu-sns col text-center"><a href="https://twitter.com/usuyuki26"
+            <div class="side-menu-sns  text-center"><a href="https://twitter.com/usuyuki26"
                     class="text-decoration-none">
                     <p class="text-black">Twitter</p>
-                </a></div>
-            <div class="side-menu-sns col text-center"><a href="https://github.com/Usuyuki"
-                    class="text-decoration-none">
+                </a>
+            </div>
+            <div class="side-menu-sns text-center"><a href="https://github.com/Usuyuki" class="text-decoration-none">
                     <p class="text-black">GitHub</p>
-                </a></div>
-            <div class="side-menu-sns col text-center"><a
-                    href="https://www.youtube.com/channel/UCI4-1pvH-0XdwfKZe4WBPhQ" class="text-decoration-none">
+                </a>
+            </div>
+            <div class="side-menu-sns  text-center"><a href="https://www.youtube.com/channel/UCI4-1pvH-0XdwfKZe4WBPhQ"
+                    class="text-decoration-none">
                     <p class="text-black">YouTube</p>
-                </a></div>
+                </a>
+            </div>
 
 
         </div>

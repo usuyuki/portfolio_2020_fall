@@ -5,7 +5,7 @@
 
 
 
-        <div class="side-logo pr-4 pt-5 fit-img">
+        <div class="side-logo pr-3 pt-5 fit-img">
             <a href="/" class="text-decoration-none">
                 <img class="logo-img"
                     src="<?php echo get_template_directory_uri(); ?>/img/logo/portfolio_title20201027.png">
@@ -15,7 +15,7 @@
         <div class="side-menu flex-column kosugi">
             <!-- ふれっくすぼっくす使った -->
 
-            <div class="side-menu-link row text-center my-5">
+            <div class="side-menu-link row text-center mt-5">
                 <a href="/" class="text-decoration-none col ">
                     <div class="side-menu-link-icon col mb-2">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo/home-24px.svg">
@@ -26,7 +26,7 @@
                 </a>
             </div>
 
-            <div class="side-menu-link row text-center my-5">
+            <div class="side-menu-link row text-center mt-5">
                 <a href="/work" class="text-decoration-none col">
                     <div class="side-menu-link-icon mb-2">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo/card_giftcard-24px.svg">
@@ -37,7 +37,7 @@
                 </a>
             </div>
 
-            <div class="side-menu-link row text-center my-5">
+            <div class="side-menu-link row text-center mt-5">
                 <a href="/hobby" class="text-decoration-none col">
                     <div class="side-menu-link-icon mb-2">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo/loyalty-24px.svg">
@@ -50,7 +50,7 @@
 
 
 
-            <div class="side-menu-link row text-center my-5">
+            <div class="side-menu-link row text-center mt-5">
                 <a href="/coffee" class="text-decoration-none col">
                     <div class="side-menu-link-icon mb-2">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo/local_cafe-24px.svg">
@@ -61,7 +61,7 @@
                 </a>
             </div>
 
-            <div class="side-menu-link row text-center my-5">
+            <div class="side-menu-link row text-center mt-5">
                 <a href="/aboutme" class="text-decoration-none col">
                     <div class="side-menu-link-icon mb-2">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo/account_box-24px.svg">

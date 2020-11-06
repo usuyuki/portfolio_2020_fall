@@ -38,3 +38,15 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 //add_image_size( [画像サイズの名前], [幅], [高さ], [切り抜きするか（初期値:False）] );
 add_image_size('thumbnail_medium',300,300,false);
+
+
+//<title></title>を自動的にいい感じにしてくれるやつ
+add_theme_support( 'title-tag' );
+
+//カスタムフィールドのパラメーター用
+function add_meta_query_vars( $public_query_vars ) {
+    $public_query_vars[] = 'meta_key'; //カスタムフィールドのキー
+    $public_query_vars[] = 'meta_value'; //カスタムフィールドの値（文字列）
+    return $public_query_vars;
+}
+add_filter( 'query_vars', 'add_meta_query_vars' );

@@ -6,12 +6,11 @@
         <img src="<?php echo get_template_directory_uri(); ?>/img/station/hobby.png" alt="趣味ページ">
     </div>
 
+
+
     <!-- 日付順でソート -->
     <div class="mx-auto pt-4">
-
-
-
-        <div class="latest-coffee text-white  mb-4 ">
+        < < class="latest-coffee text-white  mb-4 ">
             <?php
                 $args = array(
                     'post_type' => 'hobby',
@@ -81,7 +80,7 @@
                 ?>
 
 
-        </div>
+        </>
 
     </div>
 

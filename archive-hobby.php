@@ -10,7 +10,7 @@
 
     <!-- 日付順でソート -->
     <div class="mx-auto pt-4">
-        < < class="latest-coffee text-white  mb-4 ">
+        <div class="latest-coffee text-white  mb-4 ">
             <?php
                 $args = array(
                     'post_type' => 'hobby',
@@ -80,7 +80,7 @@
                 ?>
 
 
-        </>
+        </div>
 
     </div>
 

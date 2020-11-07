@@ -20,7 +20,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>うすゆきポートフォリオ</title>
 
-
+    <!-- WordPressのjquery読み込ませない -->
+    <?php wp_deregister_script('jquery'); ?>
     <!-- googleフォント読み込み -->
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
@@ -152,10 +153,12 @@
             width: 100%;
             /* height: 100%; */
         }
+
+        .max-percent-img {
+            width: 100%;
+        }
     </style>
-    <script>
-        $('img[usemap]').rwdImageMaps();
-    </script>
+
 </head>
 
 <body>

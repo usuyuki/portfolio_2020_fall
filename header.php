@@ -203,9 +203,9 @@
 
 
             <!-- スマホ用ヘッダー -->
-            <nav class="row navbar navbar-dark bg-white d-flex 	d-block d-md-none">
-                <div class="side-logo  fit-img " style="width:70%;">
-                    <a href="/" class="text-decoration-none">
+            <nav class="row navbar navbar-dark bg-white d-flex 	d-block d-md-none fixed-top" style=" ">
+                <div class="side-logo  fit-img mx-auto my-auto  " style="width:70%;">
+                    <a href="/" class="text-decoration-none ">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo/portfolio_title20201027.png">
                     </a>
                 </div>
@@ -317,4 +317,4 @@
             </nav>
 
 
-            <div class="row">
+            <div class="row mt-5  mt-md-0">

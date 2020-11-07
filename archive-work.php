@@ -3,7 +3,13 @@
 <div class="col-md-10">
     <div class="ekimeihyou text-center mt-3 mb-5">
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
-        <img src="<?php echo get_template_directory_uri(); ?>/img/station/work.png" alt="制作物ページ">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/station/work.png" usemap="#ImageMap" alt="制作物ページ">
+        <map name="ImageMap">
+            <area shape="rect" coords="101,155,307,231" href="/" alt="" />
+            <area shape="rect" coords="104,240,231,274" href="/" alt="" />
+            <area shape="rect" coords="385,155,592,230" href="/hobby" alt="" />
+            <area shape="rect" coords="477,241,591,277" href="/hobby" alt="" />
+        </map>
     </div>
     <!-- 投稿分けコーナー
     <div class="">
@@ -83,7 +89,7 @@
                 <div class="col-12 col-md-8">
                     <div class="d-flex flex-column p-2">
                         <div class="text-decoration-none text-white  mx-auto">
-                            <a class="h5 text-center mt-1" href="<?php echo get_permalink(); ?>">
+                            <a class="h4 text-center my-2" href="<?php echo get_permalink(); ?>">
                                 "<?php the_title(); ?>"</a>
                         </div>
                         <div class="row mt-1">
@@ -102,7 +108,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="mt-4 pl-0  text-center mx-center">
+                        <div class="mt-4 pl-0  text-left mx-center">
 
                             <p><?php the_excerpt(); ?></p>
                         </div>

@@ -3,7 +3,13 @@
 <div class="col-md-10 ">
     <div class="ekimeihyou text-center mt-3 mb-5">
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
-        <img src="<?php echo get_template_directory_uri(); ?>/img/station/coffee.png" alt="珈琲ページ">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/station/coffee.png" usemap="#ImageMap" alt="珈琲ページ">
+        <map name="ImageMap">
+            <area shape="rect" coords="101,155,307,231" href="/work" alt="" />
+            <area shape="rect" coords="104,240,231,274" href="/work" alt="" />
+            <area shape="rect" coords="385,155,592,230" href="/coffee" alt="" />
+            <area shape="rect" coords="477,241,591,277" href="/coffee" alt="" />
+        </map>
     </div>
 
     <div class="mx-auto pt-4 ">

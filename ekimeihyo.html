@@ -2,5 +2,230 @@
 
 </style>
 <head>
-    
+    <!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-07RXE7Y9QP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-07RXE7Y9QP');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>うすゆきポートフォリオ</title>
+
+
+    <!-- googleフォント読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+
+
+    <!-- bootstrap4読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link ref="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/destyle.css">
+    <?php wp_head(); ?>
+    <style>
+        header {
+            height: 100%
+        }
+
+        html,
+        body {
+            font-family: 'Kosugi Maru', sans-serif;
+
+        }
+
+        .kosugi {
+            font-family: 'Kosugi', sans-serif;
+
+        }
+
+        .sidebar_fixed {
+            position: fixed;
+            top: 0px;
+            background-color: #9C776D;
+            /* height: 100%; */
+            height: 100vh;
+            max-height: 100vh;
+            /* heightとmax-heightで画面いっぱいかつスクロール固定を実現 */
+        }
+
+        .main {
+            background-color: black;
+        }
+
+        .back-black {
+            background-color: black;
+        }
+
+        .copyright {
+            margin-top: 10%;
+
+        }
+
+        a:hover {
+
+            text-decoration: underline;
+            color: white;
+
+        }
+
+        .wrap {
+            /* overflow: hidden; */
+        }
+
+        .logo-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .work-img img {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto 0;
+        }
+
+
+
+        .work-img iframe {
+            object-fit: contain;
+
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .box-hobby {
+            background-color: #8d1e47;
+            border: 2px dashed #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 0 4px #8d1e47;
+            color: #fff;
+            margin: 2em 0;
+            padding: 2em;
+        }
+
+        .for-page {}
+
+        .for-page h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 1% 0;
+            border-top: 1px solid white;
+        }
+
+        .for-page h3 {
+            font-size: 1em;
+            font-weight: bold;
+            margin: 1% 0;
+            border-top: 1px solid white;
+
+        }
+
+        figcaption {
+            font-size: 0.5em;
+            text-align: center;
+        }
+
+        .ekimeihyou img {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .table-aaa {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .fit-img img {
+            object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .sankaku-left{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 40px 87px 40px 0;
+            border-color: transparent #586E58 transparent transparent;
+            float:left;
+        }
+        .eki-sikaku{
+            position: relative;
+            top:0.7px;
+            left:83px;
+            width: 488px;
+            height: 78px;
+  background-color: #586E58;
+        }
+        .sankaku-right{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 45.5px 0 45.5px 87px;
+            border-color: transparent transparent transparent #586E58;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="border border-3 text-white" style="background-color: #ABACA6;">
+
+                <div class="row">
+                        <div class="col-2"></div>
+                    <div class="col-3 " >
+                        <div class="my-auto mx-auto text-center rounded" style="border:3px solid#586E58; ">
+
+                            <p class="mx-auto  py-0 my-0">UU</p>
+                            <p class="mx-auto py-0 my-0">26</p>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p class="row h3 text-center mx-auto">読書</p>
+                        <p class="row  text-center mx-auto">どくしょ</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="row">中国語</p>
+                        <p class="row">韓国語</p>
+                    </div>
+                    <div class="col-2"></div>
+            
+                    <div class="row mx-auto">
+                        
+                        <div class="eki-bar">
+                            <div class="sankaku-left">     </div>
+                            <div class="eki-sikaku">     </div>
+                            <!-- <div class="sankaku-right">  </div> -->
+                        </div>
+                        <div class="eki-bar-name">
+                            <div class="">
+                                趣味
+                            </div>
+                        </div>
+                        
+                    </div>    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
 </head>

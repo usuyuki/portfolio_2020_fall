@@ -100,6 +100,9 @@
             <a href="/privacy-policy">
                 <p style="font-size:0.6em;">プライバシーポリシー</p>
             </a>
+            <a href="/link">
+                <p style="font-size:0.6em;">リンク集！</p>
+            </a>
             <p>copyright 2020 usuyuki</p>
         </div>
     </div>

@@ -31,6 +31,10 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link ref="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/destyle.css">
+
+    <!-- font awsome読み込み -->
+    <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
+
     <?php wp_head(); ?>
     <style>
         header {
@@ -151,6 +155,49 @@
             object-fit: contain;
             width: 100%;
             /* height: 100%; */
+        }
+
+        .link-btn a {
+
+            text-decoration: none;
+
+            padding: 0.5em;
+
+            text-align: center;
+            color: white;
+            background: black;
+            border: 1px solid white;
+            border-radius: 10%;
+        }
+
+        .link-btn:hover a {
+            background: #DFF68F;
+            border: 1px solid #DFF68F;
+            color: #343a40;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .btn-circle-border-simple {
+            display: inline-block;
+            text-decoration: none;
+            color: #DFF68F;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            border-radius: 50%;
+            border: solid 2px #DFF68F;
+            text-align: center;
+            overflow: hidden;
+            font-weight: bold;
+            transition: .4s;
+        }
+
+        .btn-circle-border-simple:hover {
+            text-decoration: none;
+            background: white;
+            border: solid 2px white;
+            color: black;
         }
     </style>
     <script>
@@ -302,12 +349,13 @@
 
                             </div>
                             <a style="font-size:0.6em;" class="dropdown-item" href="/privacy-policy">プライバシーポリシー</a>
-                            <a href="/privacy-policy">
-                                <div class="dropdown-divider"></div>
-                                <a style="font-size:0.9em;" class="dropdown-item" href="https://twitter.com/usuyuki26"
-                                    target=”_blank”>Twitter</a>
-                                <a style="font-size:0.9em;" class="dropdown-item" href="https://github.com/Usuyuki"
-                                    target=”_blank”>GitHub</a>
+                            <a style="font-size:0.6em;" class="dropdown-item" href="/link">リンク集！</a>
+
+                            <div class="dropdown-divider"></div>
+                            <a style="font-size:0.9em;" class="dropdown-item" href="https://twitter.com/usuyuki26"
+                                target=”_blank”>Twitter</a>
+                            <a style="font-size:0.9em;" class="dropdown-item" href="https://github.com/Usuyuki"
+                                target=”_blank”>GitHub</a>
 
                         </div>
                     </div>

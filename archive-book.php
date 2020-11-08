@@ -12,7 +12,7 @@
         </map>
     </div>
 
-    <div class="row mx-auto pt-4 text-white ">
+    <div class="mx-auto pt-4 text-white ">
 
         <!-- 說明-->
         <div class="text-center mb-4 mx-auto">
@@ -28,27 +28,8 @@
 
 
         <!-- 詳細情報 -->
-        <div class="row text-decoration-none  " style="max-width:100%;">
-
-
-            <div class="">
-
-
-                <table
-                    class="table table-striped text-white text-left table-bordered my-auto mx-auto  table-responsive-md">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="text-center">表紙</th>
-                            <th scope="col" class="text-center">書名</th>
-                            <th scope="col" class="text-center">著者</th>
-                            <th scope="col" class="text-center">出版社</th>
-                            <th scope="col" class="text-center">発売日</th>
-                            <th scope="col" class="text-center">読了日</th>
-                            <th scope="col" class="text-center">ジャンル</th>
-                            <th scope="col" class="text-center">感想</th>
-                        </tr>
-                    </thead>
-                    <?php
+        <div class="row text-decoration-none d-flex flex-column ">
+            <?php
                             $args = array(
                                 'post_type' => 'book',
                                 'numberposts' => -1,
@@ -64,25 +45,37 @@
                                 foreach( $posts as $post ): setup_postdata( $post );
                             
                         ?>
-                    <tbody>
-                        <tr>
-                            <td> <?php  the_field ("book_img_link" ); ?></td>
-                            <td><?php the_title(); ?></td>
-                            <td><?php the_field ( "book_writer" ); ?> </td>
-                            <td><?php the_field ( "book_publisher" ); ?></td>
-                            <td><?php the_field ( "book_publishdate" ); ?></td>
-                            <td><?php the_field ( "book_read" ); ?></td>
-                            <td><?php the_field ( "book_kind" ); ?></td>
-                            <td><?php the_excerpt(); ?></td>
-                        </tr>
 
-                    </tbody>
-                    <?php 
+            <div class="book-waku border rounded border-white my-2 mx-auto p-2" style="width:80%;">
+                <div class="d-flex flex-wrap">
+
+                    <div class=" pl-md-4 pr-md-0 mx-auto mx-md-0 mt-1 book-img">
+                        <!-- アマゾンアソシエイト・プログラムによる本の画像 -->
+                        <?php  the_field ("book_img_link" ); ?>
+                    </div>
+                    <div class="pl-3 pr-4">
+                        <p class="h3 border-bottom border-white my-3 my-md-3"><?php the_title(); ?></p>
+                        <p>著者:<?php the_field ( "book_writer" ); ?> </p>
+                        <p>出版社:<?php the_field ( "book_publisher" ); ?></p>
+                        <p>出版日:<?php the_field ( "book_publishdate" ); ?></p>
+                        <p>ジャンル:<?php the_field ( "book_kind" ); ?></p>
+                    </div>
+                </div>
+                <div class="row my-1 pl-4">
+
+                    <div class=" mt-4  pl-2 pr-4">
+                        <p class="">読了日:<?php the_field ( "book_read" ); ?></p>
+
+                        <p class="text-wrap">感想:<?php the_excerpt(); ?></p>
+                    </div>
+                </div>
+
+
+            </div>
+            <?php 
                 endforeach;
             endif;
             ?>
-                </table>
-            </div>
 
         </div>
 

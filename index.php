@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
 <div class="col-md-10" style="min-height:100vh;">
-    <div class="main text-white text-center bg-img ">
+    <div class="main text-white text-center bg-img mt-5 ">
 
         <div class="row text-center " style="padding-top:10%;">
             <p class="h1 m-3  mx-auto">This is Usuyuki Portfolio</p>

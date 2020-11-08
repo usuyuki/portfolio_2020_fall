@@ -275,7 +275,7 @@
 
                 <div>
                     <!-- 選択ボタン -->
-                    <div class="btn-group dropleft bg-black kosugi">
+                    <div class="btn-group dropleft bg-black kosugi  ">
                         <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             Menu

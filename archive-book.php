@@ -12,234 +12,72 @@
         </map>
     </div>
 
-    <div class="mx-auto pt-4 ">
+    <div class="mx-auto pt-4 text-white ">
 
-
-        <div class="">
-
-            <p class="h3 text-white">最近購入した豆</p>
-        </div>
-        <!-- 最近買った豆 PC用！！-->
-        <div class="latest-coffee text-white d-flex mb-4 d-none d-md-block">
-            <?php
-                $args = array(
-                    'post_type' => 'book',
-                    'numberposts' => -1,
-                    'post_status' => 'publish',
-                    'orderby' => 'meta_value',
-                    'meta_key' => 'book_read', //ACFのフィールド名
-                    'order' => 'DESC'
-                );
-
-                $posts = get_posts($args);
-
-                if ( $posts ):
-                    foreach( $posts as $post ): setup_postdata( $post );
-                 
-            ?>
-
-
-            <!-- 画像 -->
-            <div class="mr-3  d-none d-md-block">
-                <a href="<?php echo get_permalink(); ?>">
-                    <?php  the_field ("book_img_link" ); ?>
-                </a>
-            </div>
-
-
-
-            <!-- 詳細情報 -->
-            <div class="text-decoration-none  d-none d-md-block">
-
-                <div class="coffee-name">
-                    <h2 class="text-decoration-none text-white h4 text-center">
-                        <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                    </h2>
-                </div>
-                <div class="">
-
-
-                    <table class="table table-striped text-white text-center table-bordered">
-                        <thead>
-                            <tr>
-
-                                <th scope="col" class="text-center">産地</th>
-                                <th scope="col" class="text-center">味の種類</th>
-                                <th scope="col" class="text-center">焙煎</th>
-                                <th scope="col" class="text-center">購入店</th>
-                                <th scope="col" class="text-center">購入日</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-
-                                <td><?php  the_field ("coffee_country" ); ?></td>
-                                <td><?php the_field ( "coffee_taste" ); ?></td>
-                                <td><?php the_field ( "coffee_roast" ); ?></td>
-                                <td><?php the_field ( "coffee_store" ); ?></td>
-                                <td><?php the_field ( "coffee_date" ); ?></td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
-
-            <?php 
-                endforeach;
-            endif;
-            ?>
-
-
+        <!-- 說明-->
+        <div class="text-center mb-4 mx-auto">
+            <p class="h5 border-bottom  ">このページについて</p>
+            <p class="">このページでは私が読んだ本に感想を添えて掲載しております。読んだ本は大学入学以降に限定しました。</p>
         </div>
 
-        <!--最近買った豆 スマホ用！！ -->
-        <div class="latest-coffee text-white d-flex mb-4 d-block d-md-none flex-column">
-            <?php
-                $args = array(
-                    'post_type' => 'coffee',
-                    'numberposts' => 1,
-                    'post_status' => 'publish',
-                    'orderby' => 'meta_value',
-                    'meta_key' => 'coffee_date', //ACFのフィールド名
-                    'order' => 'DESC'
-                );
-
-                $posts = get_posts($args);
-
-                if ( $posts ):
-                    foreach( $posts as $post ): setup_postdata( $post );
-                 
-            ?>
-
-
-            <!-- 画像 -->
-            <div class="mr-3 text-center">
-                <a href="<?php echo get_permalink(); ?>">
-                    <?php 
-                    $image = get_field('coffee_img');
-                    $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-                    if( $image ) {
-                        echo wp_get_attachment_image( $image, $size );
-                    }
-                    else{
-                        echo  wp_get_attachment_image( 126, $size );
-                    }
-                ?>
-                </a>
-            </div>
-
-
-
-            <!-- 詳細情報 -->
-            <section class="text-decoration-none ">
-
-                <div class="coffee-name">
-                    <h2 class="text-decoration-none text-white h4 text-center">
-                        <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                    </h2>
-                </div>
-                <div class="">
-
-
-                    <table class="table table-striped text-white text-center table-bordered">
-                        <thead>
-                            <tr>
-
-                                <th scope="col" class="text-center">産地</th>
-                                <th scope="col" class="text-center">味の種類</th>
-                                <th scope="col" class="text-center">焙煎</th>
-                                <th scope="col" class="text-center">購入店</th>
-                                <th scope="col" class="text-center">購入日</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-
-                                <td><?php  the_field ("coffee_country" ); ?></td>
-                                <td><?php the_field ( "coffee_taste" ); ?></td>
-                                <td><?php the_field ( "coffee_roast" ); ?></td>
-                                <td><?php the_field ( "coffee_store" ); ?></td>
-                                <td><?php the_field ( "coffee_date" ); ?></td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-
-            </section>
-
-            <?php 
-                endforeach;
-            endif;
-            ?>
-
-
+        <div class="text-center mb-4 mx-auto">
+            <p class="h5 border-bottom  ">このページに掲載されている画像について</p>
+            <p class="">このページではAmazonアソシエイト・プログラムの画像つきリンク生成機能により画像を添付しております。<br>画像をクリックすると該当するAmazonの購入ページへ遷移します。</p>
         </div>
 
-    </div>
-    <!-- 購入した珈琲豆一覧 -->
-    <div class="post border-top border-white">
 
 
-        <!-- <p class="text-white text-center h1">購入した珈琲豆</p> -->
-
-
-
-        <div class="d-flex flex-wrap  justify-content-around mt-4">
-
-
+        <!-- 詳細情報 -->
+        <div class="row text-decoration-none d-flex flex-column ">
             <?php
-$args = array(
-    'post_type' => 'coffee',
-    'numberposts' => -1,
-    'post_status' => 'publish',
-    'orderby' => 'meta_value',
-    'meta_key' => 'coffee_date', //ACFのフィールド名
-    'order' => 'DESC'
-);
+                            $args = array(
+                                'post_type' => 'book',
+                                'numberposts' => -1,
+                                'post_status' => 'publish',
+                                'orderby' => 'meta_value',
+                                'meta_key' => 'book_read', //ACFのフィールド名
+                                'order' => 'DESC'
+                            );
 
-$posts = get_posts($args);
+                            $posts = get_posts($args);
 
-            if ( $posts ):
-                foreach( $posts as $post ): setup_postdata( $post );
-                 
-            ?>
-            <section class="text-white text-decoration-none text-center my-5  " style="flex-basis:30%">
-
-                <div class="">
-                    <!-- 画像 -->
-                    <a href="<?php echo get_permalink(); ?>">
-                        <?php 
-                            $image = get_field('coffee_img');
-                            $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-                            if( $image ) {
-                                echo wp_get_attachment_image( $image, $size );
-                            }
-                            else{
-                                echo  wp_get_attachment_image( 126, $size );
-                            }
+                            if ( $posts ):
+                                foreach( $posts as $post ): setup_postdata( $post );
+                            
                         ?>
-                    </a>
 
+            <div class="book-waku border rounded border-white my-2 mx-auto p-2" style="width:80%;">
+                <div class="d-flex flex-wrap">
+
+                    <div class=" pl-md-4 pr-md-0 mx-auto mx-md-0 mt-1 book-img">
+                        <!-- アマゾンアソシエイト・プログラムによる本の画像 -->
+                        <?php  the_field ("book_img_link" ); ?>
+                    </div>
+                    <div class="pl-3 pr-4">
+                        <p class="h3 border-bottom border-white my-3 my-md-3"><?php the_title(); ?></p>
+                        <p>著者:<?php the_field ( "book_writer" ); ?> </p>
+                        <p>出版社:<?php the_field ( "book_publisher" ); ?></p>
+                        <p>出版日:<?php the_field ( "book_publishdate" ); ?></p>
+                        <p>ジャンル:<?php the_field ( "book_kind" ); ?></p>
+                    </div>
                 </div>
-                <h2 class="text-decoration-none text-white h5 text-center mt-2 mb-1">
-                    <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                </h2>
-                <p>産地:<?php  the_field ("coffee_country" ); ?></p>
+                <div class="row my-1 pl-4">
 
-                <p>購入日:<?php the_field ( "coffee_date" ); ?></p>
+                    <div class=" mt-4  pl-2 pr-4">
+                        <p class="">読了日:<?php the_field ( "book_read" ); ?></p>
 
-            </section>
+                        <p class="text-wrap">感想:<?php the_excerpt(); ?></p>
+                    </div>
+                </div>
 
+
+            </div>
             <?php 
                 endforeach;
             endif;
             ?>
 
         </div>
-
 
 
 

@@ -22,11 +22,15 @@
 
     <!-- WordPressのjquery読み込ませない -->
     <?php wp_deregister_script('jquery'); ?>
+
+
     <!-- googleフォント読み込み -->
+    <!-- kosugiMaruは通常文で使用 -->
     <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <!-- kosugiはサイドバーで使用 -->
     <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
-
-
+    <!-- aboutmeページのタイトルで使用 英語文字のみ対応 -->
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
     <!-- bootstrap4読み込み -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -159,6 +163,13 @@
             /* height: 100%; */
         }
 
+        .book-img img {
+            object-fit: contain;
+            /* width: 20%; */
+            max-width: 100%;
+            /* height: 100%; */
+        }
+
         .link-btn a {
 
             text-decoration: none;
@@ -219,6 +230,10 @@
 
         .fa-mg {
             margin-right: 0.6em;
+        }
+
+        .eng-title {
+            font-family: 'Goldman', cursive;
         }
     </style>
 

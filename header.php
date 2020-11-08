@@ -352,7 +352,8 @@
 
                             </div>
                             <a style="font-size:0.6em;" class="dropdown-item" href="/privacy-policy">プライバシーポリシー</a>
-                            <a style="font-size:0.6em;" class="dropdown-item" href="/link">リンク集！</a>
+                            <a style="font-size:0.6em;" class="dropdown-item" href="/link"><i
+                                    class="fas fa-link"></i>リンク集</a>
 
                             <div class="dropdown-divider"></div>
                             <a style="font-size:0.9em;" class="dropdown-item" href="https://twitter.com/usuyuki26"

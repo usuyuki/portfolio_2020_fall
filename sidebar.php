@@ -97,12 +97,13 @@
         </div>
 
         <div class="copyright text-black-40 text-center ">
+            <a href="/link">
+                <p style="font-size:0.6em;"><i class="fas fa-link"></i>リンク集</p>
+            </a>
             <a href="/privacy-policy">
                 <p style="font-size:0.6em;">プライバシーポリシー</p>
             </a>
-            <a href="/link">
-                <p style="font-size:0.6em;">リンク集！</p>
-            </a>
+
             <p>copyright 2020 usuyuki</p>
         </div>
     </div>

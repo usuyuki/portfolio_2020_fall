@@ -14,7 +14,7 @@
                     'numberposts' => -1,
                     'post_status' => 'publish',
                     'orderby' => 'meta_value',
-                    'meta_key' => 'link-date', //ACFのフィールド名
+                    'meta_key' => 'link_date', //ACFのフィールド名
                     'order' => 'DESC'
                 );
 

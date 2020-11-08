@@ -17,7 +17,7 @@
 
         <div class="">
 
-            <p class="h3 text-white">最近購入した豆</p>
+            <p class="h3 text-white">最近購入した珈琲豆</p>
         </div>
         <!-- 最近買った豆 PC用！！-->
         <div class="latest-coffee text-white d-flex mb-4 d-none d-md-block">

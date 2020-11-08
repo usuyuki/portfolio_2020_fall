@@ -15,23 +15,27 @@
     <div class="row mx-auto pt-4 text-white ">
 
         <!-- 說明-->
-        <div class="row text-center mb-4">
-            <p class="h5 border-bottom">このページに掲載されている画像について</p>
-            <p>このページではAmazonアソシエイト・プログラムの画像つきリンク生成機能により画像を添付しております。<br>画像をクリックするとAmazonのリンクへ遷移します。</p>
+        <div class="text-center mb-4 mx-auto">
+            <p class="h5 border-bottom  ">このページについて</p>
+            <p class="">このページでは私が読んだ本に感想を添えて掲載しております。読んだ本は大学入学以降に限定しました。</p>
+        </div>
+
+        <div class="text-center mb-4 mx-auto">
+            <p class="h5 border-bottom  ">このページに掲載されている画像について</p>
+            <p class="">このページではAmazonアソシエイト・プログラムの画像つきリンク生成機能により画像を添付しております。<br>画像をクリックすると該当するAmazonの購入ページへ遷移します。</p>
         </div>
 
 
 
         <!-- 詳細情報 -->
-        <div class="row text-decoration-none  ">
+        <div class="row text-decoration-none  " style="max-width:100%;">
 
 
             <div class="">
 
 
                 <table
-                    class="table table-striped text-white text-left table-bordered my-auto mx-auto  table-responsive-md"
-                    style="max-width:100%;">
+                    class="table table-striped text-white text-left table-bordered my-auto mx-auto  table-responsive-md">
                     <thead>
                         <tr>
                             <th scope="col" class="text-center">表紙</th>

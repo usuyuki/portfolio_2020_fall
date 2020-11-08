@@ -79,17 +79,22 @@
 
             <div class="side-menu-sns  text-center"><a href="https://twitter.com/usuyuki26" class="text-decoration-none"
                     target=”_blank”>
-                    <p class="text-black">Twitter</p>
+                    <p class="text-black"><i class="fab fa-twitter"></i></p>
                 </a>
             </div>
             <div class="side-menu-sns text-center"><a href="https://github.com/Usuyuki" class="text-decoration-none"
                     target=”_blank”>
-                    <p class="text-black">GitHub</p>
+                    <p class="text-black"><i class="fab fa-github"></i></p>
                 </a>
             </div>
             <div class="side-menu-sns  text-center"><a href="https://www.youtube.com/channel/UCI4-1pvH-0XdwfKZe4WBPhQ"
                     class="text-decoration-none" target=”_blank”>
-                    <p class="text-black">YouTube</p>
+                    <p class="text-black"><i class="fab fa-youtube"></i></p>
+                </a>
+            </div>
+            <div class="side-menu-sns  text-center"><a href="/link" class="text-decoration-none" target=”_blank”>
+                    <p class="text-black mt-1" style="font-size:0.85em;"><i class="fas fa-link"></i>リンク集
+                    </p>
                 </a>
             </div>
 
@@ -97,9 +102,7 @@
         </div>
 
         <div class="copyright text-black-40 text-center ">
-            <a href="/link">
-                <p style="font-size:0.6em;"><i class="fas fa-link"></i>リンク集</p>
-            </a>
+
             <a href="/privacy-policy">
                 <p style="font-size:0.6em;">プライバシーポリシー</p>
             </a>

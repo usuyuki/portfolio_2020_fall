@@ -13,7 +13,7 @@
     </div>
     <!-- ジャンル分けコーナー -->
     <div class="">
-        <p class="text-center h4 text-white">全ジャンル</p>
+        <p class="text-center h4 text-white">デザイン</p>
     </div>
     <div class="d-flex flex-wrap justify-content-center">
         <a class="btn btn-info mx-2 my-2" href="/work">全ジャンル</a>
@@ -21,7 +21,6 @@
         <a class="btn btn-info  mx-2 my-2" href="/category/video_editing">動画編集</a>
         <a class="btn btn-info  mx-2 my-2" href="/category/design">デザイン</a>
     </div>
-
     <!-- 日付順でソート -->
     <div class="mx-auto pt-4">
 
@@ -32,6 +31,7 @@
         <div class=" text-white  mb-4 row">
             <?php
                 $args = array(
+                    'category'=>'design',
                     'post_type' => 'work',
                     'numberposts' => -1,
                     'post_status' => 'publish',

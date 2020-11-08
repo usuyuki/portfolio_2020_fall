@@ -17,7 +17,7 @@
         <!-- 說明-->
         <div class="text-center mb-4 mx-auto">
             <p class="h5 border-bottom  ">このページについて</p>
-            <p class="">このページでは私が読んだ本に感想を添えて掲載しております。読んだ本は大学入学以降に限定しました。</p>
+            <p class="">このページでは私が読んだ本に感想を添えて掲載しております。読んだ本は記憶の辿れる大学入学以降に限定しました。</p>
         </div>
 
         <div class="text-center mb-4 mx-auto">
@@ -56,7 +56,7 @@
                         <?php  the_field ("book_img_link" ); ?>
                     </div>
                     <div class="pl-3 pr-4">
-                        <p class="h3 border-bottom border-white my-3 my-md-3"><?php the_title(); ?></p>
+                        <p class="h3 border-bottom border-white my-3 my-md-3 text-wrap"><?php the_title(); ?></p>
                         <p>著者:<?php the_field ( "book_writer" ); ?> </p>
                         <p>出版社:<?php the_field ( "book_publisher" ); ?></p>
                         <p>出版日:<?php the_field ( "book_publishdate" ); ?></p>
@@ -69,6 +69,7 @@
                         <p class="">読了日:<?php the_field ( "book_read" ); ?></p>
 
                         <p class="text-wrap">感想:<?php the_excerpt(); ?></p>
+                        <p class="text-wrap">アクションプラン:<?php the_excerpt(); ?></p>
                     </div>
                 </div>
 

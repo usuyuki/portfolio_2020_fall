@@ -43,7 +43,7 @@ add_image_size('thumbnail_medium',300,300,false);
 //<title></title>を自動的にいい感じにしてくれるやつ
 add_theme_support( 'title-tag' );
 
-//カスタムフィールドのパラメーター用
+//カスタムフィールドのパラメーター用←ソートで使う
 function add_meta_query_vars( $public_query_vars ) {
     $public_query_vars[] = 'meta_key'; //カスタムフィールドのキー
     $public_query_vars[] = 'meta_value'; //カスタムフィールドの値（文字列）

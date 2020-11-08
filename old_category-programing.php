@@ -11,16 +11,27 @@
             <area shape="rect" coords="477,241,591,277" href="/hobby" alt="" />
         </map>
     </div>
-    <!-- ジャンル分けコーナー -->
+    <!-- 投稿分けコーナー
     <div class="">
-        <p class="text-center h4 text-white">全ジャンル</p>
-    </div>
-    <div class="d-flex flex-wrap justify-content-center">
-        <a class="btn btn-info mx-2 my-2" href="/work">全ジャンル</a>
-        <a class="btn btn-info  mx-2 my-2" href="/category/programing">プログラミング</a>
-        <a class="btn btn-info  mx-2 my-2" href="/category/video_editing">動画編集</a>
-        <a class="btn btn-info  mx-2 my-2" href="/category/design">デザイン</a>
-    </div>
+        <ul>
+            <li>
+                <a
+                    href="<?php echo add_query_arg( array('meta_key' => 'views', 'orderby' => 'meta_value_num', 'order' => 'DESC'), get_pagenum_link(1) ); ?>">全て</a>
+            </li>
+            <li>
+                <a
+                    href="<?php echo add_query_arg( array('meta_key' => 'views', 'orderby' => 'meta_value_num', 'order' => 'DESC'), get_pagenum_link(1) ); ?>">プログラミング</a>
+            </li>
+            <li>
+                <a
+                    href="<?php echo add_query_arg( array('meta_key' => 'views', 'orderby' => 'meta_value_num', 'order' => 'ASC'), get_pagenum_link(1) ); ?>">動画制作</a>
+            </li>
+            <li>
+                <a
+                    href="<?php echo add_query_arg( array('meta_key' => 'views', 'orderby' => 'meta_value_num', 'order' => 'ASC'), get_pagenum_link(1) ); ?>">デザイン</a>
+            </li>
+        </ul>
+    </div> -->
 
     <!-- 日付順でソート -->
     <div class="mx-auto pt-4">
@@ -33,6 +44,7 @@
             <?php
                 $args = array(
                     'post_type' => 'work',
+                    'category_name'    => 'programing', 
                     'numberposts' => -1,
                     'post_status' => 'publish',
                     'orderby' => 'meta_value',

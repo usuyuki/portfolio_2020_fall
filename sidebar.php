@@ -48,7 +48,16 @@
                 </a>
             </div>
 
-
+            <div class="side-menu-link row text-center mt-5">
+                <a href="/book" class="text-decoration-none col">
+                    <div class="side-menu-link-icon mb-2">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/book-24px.svg">
+                    </div>
+                    <div class="side-menu-link-name text-decoration-none text-black h5">
+                        <p>読書</p>
+                    </div>
+                </a>
+            </div>
 
             <div class="side-menu-link row text-center mt-5">
                 <a href="/coffee" class="text-decoration-none col">
@@ -62,21 +71,14 @@
             </div>
 
             <div class="side-menu-link row text-center mt-5">
-                <a href="/aboutme" class="text-decoration-none col">
-                    <div class="side-menu-link-icon mb-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo/account_box-24px.svg">
-                    </div>
-                    <div class="side-menu-link-name text-black h5">
-                        <p>個人</p>
-                    </div>
-                </a>
+
             </div>
 
 
         </div>
         <div class="side-contact row d-flex justify-content-around mx-1">
 
-
+            <!-- 
             <div class="side-menu-sns  text-center"><a href="https://twitter.com/usuyuki26" class="text-decoration-none"
                     target=”_blank”>
                     <p class="text-black"><i class="fab fa-twitter"></i></p>
@@ -91,9 +93,16 @@
                     class="text-decoration-none" target=”_blank”>
                     <p class="text-black"><i class="fab fa-youtube"></i></p>
                 </a>
+            </div> -->
+
+            <div class="side-menu-sns  text-center"><a href="/aboutme" class="text-decoration-none" target=”_blank”>
+                    <p class="text-black mt-1" style="font-size:0.85em;"><i class="fas fa-user-circle fa-mg"></i>私について
+                    </p>
+                </a>
             </div>
+
             <div class="side-menu-sns  text-center"><a href="/link" class="text-decoration-none" target=”_blank”>
-                    <p class="text-black mt-1" style="font-size:0.85em;"><i class="fas fa-link"></i>リンク集
+                    <p class="text-black mt-1" style="font-size:0.85em;"><i class="fas fa-link fa-mg"></i>リンク集
                     </p>
                 </a>
             </div>

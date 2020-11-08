@@ -8,8 +8,8 @@
         <map name="ImageMap">
             <area shape="rect" coords="101,155,307,231" href="/work" alt="" />
             <area shape="rect" coords="104,240,231,274" href="/work" alt="" />
-            <area shape="rect" coords="385,155,592,230" href="/coffee" alt="" />
-            <area shape="rect" coords="477,241,591,277" href="/coffee" alt="" />
+            <area shape="rect" coords="385,155,592,230" href="/book" alt="" />
+            <area shape="rect" coords="477,241,591,277" href="/book" alt="" />
         </map>
 
     </div>

@@ -34,7 +34,7 @@
     <link ref="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/destyle.css">
 
-    <!-- font awsome読み込み -->
+    <!-- Font Awesome読み込み -->
     <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
 
     <?php wp_head(); ?>
@@ -216,6 +216,10 @@
             /* 縦横中央 */
 
         }
+
+        .fa-mg {
+            margin-right: 0.6em;
+        }
     </style>
 
 </head>
@@ -281,6 +285,24 @@
                             Menu
                         </button>
                         <div class="dropdown-menu">
+
+
+                            <div class="d-flex my-2">
+                                <div class="ml-2">
+
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo/home-24px.svg">
+
+                                </div>
+                                <div class="">
+                                    <a class="dropdown-item mt-2" href="/">
+
+                                        ホーム
+                                    </a>
+                                </div>
+
+                            </div>
+
+
                             <div class="d-flex my-2">
                                 <div class="ml-2">
 
@@ -311,7 +333,20 @@
                                 </div>
 
                             </div>
+                            <div class="d-flex my-2">
+                                <div class="ml-2">
 
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo/book-24px.svg">
+
+                                </div>
+                                <div class="">
+                                    <a class="dropdown-item mt-2" href="/book">
+
+                                        読書
+                                    </a>
+                                </div>
+
+                            </div>
 
 
                             <div class="d-flex my-2">
@@ -329,49 +364,18 @@
 
                             </div>
 
-                            <div class="d-flex my-2">
-                                <div class="ml-2">
-
-                                    <img
-                                        src="<?php echo get_template_directory_uri(); ?>/img/logo/account_box-24px.svg">
-
-                                </div>
-                                <div class="">
-                                    <a class="dropdown-item mt-2" href="/aboutme">
-
-                                        個人
-                                    </a>
-                                </div>
-
-                            </div>
-
-
+                            <div class="dropdown-divider"></div>
+                            <a style="font-size:0.8em;" class="dropdown-item my-1" href="/aboutme"><i
+                                    class="fas fa-user-circle fa-mg"></i>私について</a>
+                            <a style="font-size:0.8em;" class="dropdown-item my-1" href="/link"><i
+                                    class="fas fa-link fa-mg"></i>リンク集</a>
+                            <a style="font-size:0.6em;" class="dropdown-item my-1" href="/privacy-policy">プライバシーポリシー</a>
 
                             <div class="dropdown-divider"></div>
-
-                            <div class="d-flex my-2">
-                                <div class="ml-2">
-
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo/home-24px.svg">
-
-                                </div>
-                                <div class="">
-                                    <a class="dropdown-item mt-2" href="/">
-
-                                        ホーム
-                                    </a>
-                                </div>
-
-                            </div>
-                            <a style="font-size:0.6em;" class="dropdown-item" href="/privacy-policy">プライバシーポリシー</a>
-                            <a style="font-size:0.6em;" class="dropdown-item" href="/link"><i
-                                    class="fas fa-link"></i>リンク集</a>
-
-                            <div class="dropdown-divider"></div>
-                            <a style="font-size:0.9em;" class="dropdown-item" href="https://twitter.com/usuyuki26"
-                                target=”_blank”>Twitter</a>
-                            <a style="font-size:0.9em;" class="dropdown-item" href="https://github.com/Usuyuki"
-                                target=”_blank”>GitHub</a>
+                            <a style="font-size:0.8em;" class="dropdown-item" href="https://twitter.com/usuyuki26"
+                                target=”_blank”><i class="fab fa-twitter fa-mg"></i>Twitter</a>
+                            <a style="font-size:0.8em;" class="dropdown-item" href="https://github.com/Usuyuki"
+                                target=”_blank”><i class="fab fa-github fa-mg"></i>GitHub</a>
 
                         </div>
                     </div>

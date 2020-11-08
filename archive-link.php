@@ -7,7 +7,7 @@
 
     <!-- 日付順でソート -->
     <div class="mx-auto pt-4">
-        <div class="latest-coffee text-white  mb-4 d-flex justify-content-center ">
+        <div class="latest-coffee text-white  mb-4 d-flex flex-wrap justify-content-around ">
             <?php
                 $args = array(
                     'post_type' => 'link',

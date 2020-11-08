@@ -3,7 +3,7 @@
 <div class="col-md-10 ">
     <div class="ekimeihyou text-center mt-3 mb-5">
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
-        <img src="<?php echo get_template_directory_uri(); ?>/img/station/coffee.png" usemap="#ImageMap" alt="珈琲ページ">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/station/book.png" usemap="#ImageMap" alt="珈琲ページ">
         <map name="ImageMap">
             <area shape="rect" coords="101,155,307,231" href="/work" alt="" />
             <area shape="rect" coords="104,240,231,274" href="/work" alt="" />
@@ -23,11 +23,11 @@
         <div class="latest-coffee text-white d-flex mb-4 d-none d-md-block">
             <?php
                 $args = array(
-                    'post_type' => 'coffee',
-                    'numberposts' => 1,
+                    'post_type' => 'book',
+                    'numberposts' => -1,
                     'post_status' => 'publish',
                     'orderby' => 'meta_value',
-                    'meta_key' => 'coffee_date', //ACFのフィールド名
+                    'meta_key' => 'book_read', //ACFのフィールド名
                     'order' => 'DESC'
                 );
 
@@ -42,16 +42,7 @@
             <!-- 画像 -->
             <div class="mr-3  d-none d-md-block">
                 <a href="<?php echo get_permalink(); ?>">
-                    <?php 
-                    $image = get_field('coffee_img');
-                    $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
-                    if( $image ) {
-                        echo wp_get_attachment_image( $image, $size );
-                    }
-                    else{
-                        echo  wp_get_attachment_image( 126, $size );
-                    }
-                ?>
+                    <?php  the_field ("book_img_link" ); ?>
                 </a>
             </div>
 

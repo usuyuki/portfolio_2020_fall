@@ -5,8 +5,8 @@
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
         <img src="<?php echo get_template_directory_uri(); ?>/img/station/coffee.png" usemap="#ImageMap" alt="珈琲ページ">
         <map name="ImageMap">
-            <area shape="rect" coords="101,155,307,231" href="/hobby" alt="" />
-            <area shape="rect" coords="104,240,231,274" href="/hobby" alt="" />
+            <area shape="rect" coords="101,155,307,231" href="/book" alt="" />
+            <area shape="rect" coords="104,240,231,274" href="/book" alt="" />
             <area shape="rect" coords="385,155,592,230" href="/aboutme" alt="" />
             <area shape="rect" coords="477,241,591,277" href="/aboutme" alt="" />
         </map>

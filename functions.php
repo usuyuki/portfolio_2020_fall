@@ -21,13 +21,13 @@ add_action( 'after_setup_theme', 'my_setup' );
 
 
 function custom_excerpt_length( $length ) {
-return 200; //表示したい文字数
+return 1000; //表示したい文字数
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 
 
-
+// 文字数超えたときに表示される文
 function new_excerpt_more($more) {
 $html = '<a href="' . esc_url( get_permalink() ) . '">[...続きを読む]</a>';
 return $html;
@@ -49,4 +49,6 @@ function add_meta_query_vars( $public_query_vars ) {
     $public_query_vars[] = 'meta_value'; //カスタムフィールドの値（文字列）
     return $public_query_vars;
 }
+
+
 add_filter( 'query_vars', 'add_meta_query_vars' );

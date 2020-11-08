@@ -23,7 +23,6 @@
 
 <script>
     jQuery('img[usemap]').rwdImageMaps();
-    jQuery('img[underworld]').rwdImageMaps();
 </script>
 </body>
 

@@ -6,7 +6,7 @@
         <!-- <p class="h1 mx-auto text-center">Hello World</p> -->
         <img src="<?php echo get_template_directory_uri(); ?>/img/bg/404.jpg" usemap="#ImageMap" alt="珈琲ページ">
         <map name="ImageMap">
-            <area shape="circle" coords="813,384,37" href="#" alt="" />
+            <area shape="circle" coords="813,384,37" href="/underworld" alt="" />
         </map>
     </div>
     <div class="row text-center text-white">

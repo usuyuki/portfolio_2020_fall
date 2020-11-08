@@ -1,17 +1,13 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
 <div class="col-md-10" style="min-height:100vh;">
-    <div class="main text-white text-center  ">
-        <div class="row text-center fit-img">
-            <img class="my-3 mt-5 p-3 mx-auto rounded"
-                src="<?php echo get_template_directory_uri(); ?>/img/bg/coffee_bg.jpg">
+    <div class="main text-white text-center bg-img ">
 
-        </div>
-        <div class="row text-center">
+        <div class="row text-center " style="padding-top:10%;">
             <p class="h1 m-3  mx-auto">This is Usuyuki Portfolio</p>
         </div>
 
-        <div class="row d-flex justify-content-around">
+        <div class="row d-flex justify-content-around" style="padding-top:20%;">
             <!-- <div class="my-3" style="flex-basis:40%;">
 
                 <img

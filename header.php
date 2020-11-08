@@ -18,7 +18,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>うすゆきポートフォリオ</title>
+
 
     <!-- WordPressのjquery読み込ませない -->
     <?php wp_deregister_script('jquery'); ?>
@@ -205,6 +205,17 @@
 
         .max-percent-img {
             width: 100%;
+        }
+
+        .bg-img {
+            background-image: url(<?php echo get_template_directory_uri();
+            ?>/img/bg/coffee_bg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+            /* 縦横中央 */
+
+        }
     </style>
 
 </head>

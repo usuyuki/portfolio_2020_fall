@@ -34,7 +34,7 @@
    $args = array(
     'category'=>'video_editing',
     'post_type' => 'work',
-    'numberposts' => 1,
+    'numberposts' => -1,
     'post_status' => 'publish',
     'orderby' => 'meta_value',
     'meta_key' => 'work_start', //ACFのフィールド名

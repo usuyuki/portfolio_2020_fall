@@ -30,28 +30,15 @@
         <!-- スマホ・PC -->
         <div class=" text-white  mb-4 row">
             <?php
-                $args = array(
-                    'category'=>'design',
-                    'post_type' => 'work',
-                    'numberposts' => -1,
-                    'post_status' => 'publish',
-                    'orderby' => 'meta_value',
-                    'meta_query' => array(
-                        'relation' => 'AND',
-          array(
-            'meta_key' => 'work_start', //ACFのフィールド名
-              'meta_value
-              ' => "A",
-              'meta_compare' => '=',
-          ),
-          array(
-              'meta_key' => 'meta_vlue',
-              'meta_value
-              ' => "B",
-              'meta_compare' => '=',
-          ),),
-                    'order' => 'DESC'
-                );
+   $args = array(
+    'category'=>'design',
+    'post_type' => 'coffee',
+    'numberposts' => 1,
+    'post_status' => 'publish',
+    'orderby' => 'meta_value',
+    'meta_key' => 'coffee_date', //ACFのフィールド名
+    'order' => 'DESC'
+);
             
                 $posts = get_posts($args);
 

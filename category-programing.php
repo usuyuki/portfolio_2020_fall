@@ -31,7 +31,7 @@
         <div class=" text-white  mb-4 row">
             <?php
    $args = array(
-    'category'=>'programing',
+    'category_name'=>'programing',
     'post_type' => 'work',
     'numberposts' => -1,
     'post_status' => 'publish',

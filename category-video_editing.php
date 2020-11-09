@@ -32,7 +32,7 @@
         <div class=" text-white  mb-4 row">
             <?php
    $args = array(
-    'category'=>'video_editing',
+    'category_name'=>'video_editing',
     'post_type' => 'work',
     'numberposts' => -1,
     'post_status' => 'publish',

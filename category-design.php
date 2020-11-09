@@ -32,11 +32,11 @@
             <?php
    $args = array(
     'category'=>'design',
-    'post_type' => 'coffee',
+    'post_type' => 'work',
     'numberposts' => 1,
     'post_status' => 'publish',
     'orderby' => 'meta_value',
-    'meta_key' => 'coffee_date', //ACFのフィールド名
+    'meta_key' => 'work_start', //ACFのフィールド名
     'order' => 'DESC'
 );
             

@@ -31,12 +31,12 @@
         <!-- スマホ・PC -->
         <div class=" text-white  mb-4 row">
             <?php
-                    $args = array(
-                        'post_type' => 'coffee',
-                        'numberposts' => 1,
+                       $args = array(
+                        'post_type' => 'work',
+                        'numberposts' => -1,
                         'post_status' => 'publish',
                         'orderby' => 'meta_value',
-                        'meta_key' => 'coffee_date', //ACFのフィールド名
+                        'meta_key' => 'work_start', //ACFのフィールド名
                         'order' => 'DESC'
                     );
             

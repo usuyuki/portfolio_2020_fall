@@ -3,7 +3,7 @@
 
 <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!--Google Analyticsここから-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-07RXE7Y9QP"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -15,6 +15,7 @@
 
         gtag('config', 'G-07RXE7Y9QP');
     </script>
+    <!--Google Analyticsここまで-->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,9 +44,23 @@
     <!-- Font Awesome読み込み -->
     <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
 
+
+    <!-- 訳ありcss -->
+    <style>
+        /* background-imageのurlがうまく機能しないため、ここに持ってきた */
+        .bg-img {
+            background-image: url(<?php echo get_template_directory_uri();
+            ?>/img/bg/coffee_bg.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center center;
+            /* 縦横中央 */
+
+        }
+    </style>
+
+
     <?php wp_head(); ?>
-
-
 </head>
 
 <body>

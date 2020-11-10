@@ -69,7 +69,10 @@
                         <p class="">読了日:<?php the_field ( "book_read" ); ?></p>
 
                         <p class="text-wrap">感想:<?php the_excerpt(); ?></p>
-                        <p class="text-wrap">アクションプラン:<?php the_excerpt(); ?></p>
+                        <?php if(!is_null(get_field('book_action'))): ?>
+                        <p class="text-wrap">アクションプラン<?php the_field ( "book_action" ); ?>
+                        </p>
+                        <?php endif; ?>
                     </div>
                 </div>
 

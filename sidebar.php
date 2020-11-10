@@ -95,13 +95,13 @@
                 </a>
             </div> -->
 
-            <div class="side-menu-sns  text-center"><a href="/aboutme" class="text-decoration-none" target=”_blank”>
+            <div class="side-menu-sns  text-center"><a href="/aboutme" class="text-decoration-none">
                     <p class="text-black mt-1" style="font-size:0.85em;"><i class="fas fa-user-circle fa-mg"></i>私について
                     </p>
                 </a>
             </div>
 
-            <div class="side-menu-sns  text-center"><a href="/link" class="text-decoration-none" target=”_blank”>
+            <div class="side-menu-sns  text-center"><a href="/link" class="text-decoration-none">
                     <p class="text-black mt-1" style="font-size:0.85em;"><i class="fas fa-link fa-mg"></i>リンク集
                     </p>
                 </a>
@@ -110,13 +110,13 @@
 
         </div>
 
-        <div class="copyright text-black-40 text-center ">
+        <div class="copyright text-black-40 text-center " target=”_blank”>
 
             <a href="/privacy-policy">
                 <p style="font-size:0.6em;">プライバシーポリシー</p>
             </a>
-            <a href="https://forms.gle/be1XENxLK6L8cP6q9">
-                <p style="font-size:0.6em;" target=”_blank”>お問い合わせ(GoogleForm)</p>
+            <a href="https://forms.gle/be1XENxLK6L8cP6q9" target=”_blank”>
+                <p style="font-size:0.6em;">お問い合わせ(GoogleForm)</p>
             </a>
 
 

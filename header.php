@@ -34,208 +34,17 @@
     <!-- bootstrap4読み込み -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <link ref="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <!-- 初期CSS消す -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/destyle.css">
-
+    <!-- CSS読み込み 通常の記述だとWordPress反映してくれないので少し特殊な書き方 -->
+    <link rel="stylesheet"
+        href="<?php bloginfo('stylesheet_url'); echo '?' . filemtime( get_stylesheet_directory() . '/style.css'); ?>"
+        type="text/css" />
     <!-- Font Awesome読み込み -->
     <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
 
     <?php wp_head(); ?>
-    <style>
-        header {
-            height: 100%
-        }
 
-        html,
-        body {
-            font-family: 'Kosugi Maru', sans-serif;
-
-        }
-
-        .kosugi {
-            font-family: 'Kosugi', sans-serif;
-
-        }
-
-        .sidebar_fixed {
-            position: fixed;
-            top: 0px;
-            background-color: #9C776D;
-            /* height: 100%; */
-            height: 100vh;
-            max-height: 100vh;
-            /* heightとmax-heightで画面いっぱいかつスクロール固定を実現 */
-        }
-
-        .main {
-            background-color: black;
-        }
-
-        .back-black {
-            background-color: black;
-        }
-
-        .copyright {
-            margin-top: 10%;
-
-        }
-
-        a:hover {
-
-            text-decoration: underline;
-            color: white;
-
-        }
-
-        .wrap {
-            /* overflow: hidden; */
-        }
-
-        .logo-img {
-            width: 100%;
-            height: auto;
-        }
-
-        .work-img img {
-            object-fit: contain;
-            max-width: 100%;
-            max-height: 100%;
-            margin: auto 0;
-        }
-
-
-
-        .work-img iframe {
-            object-fit: contain;
-
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        .box-hobby {
-            background-color: #8d1e47;
-            border: 2px dashed #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 0 4px #8d1e47;
-            color: #fff;
-            margin: 2em 0;
-            padding: 2em;
-        }
-
-        .for-page {}
-
-        .for-page h2 {
-            font-size: 1.5em;
-            font-weight: bold;
-            margin: 1% 0;
-            border-top: 1px solid white;
-        }
-
-        .for-page h3 {
-            font-size: 1em;
-            font-weight: bold;
-            margin: 1% 0;
-            border-top: 1px solid white;
-
-        }
-
-        figcaption {
-            font-size: 0.5em;
-            text-align: center;
-        }
-
-        .ekimeihyou img {
-            object-fit: contain;
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        .table-aaa {
-            object-fit: contain;
-            max-width: 100%;
-            max-height: 100%;
-        }
-
-        .fit-img img {
-            object-fit: contain;
-            width: 100%;
-            /* height: 100%; */
-        }
-
-        .book-img img {
-            object-fit: contain;
-            /* width: 20%; */
-            max-width: 100%;
-            /* height: 100%; */
-        }
-
-        .link-btn a {
-
-            text-decoration: none;
-
-            padding: 0.5em;
-
-            text-align: center;
-            color: white;
-            background: black;
-            border: 1px solid white;
-            border-radius: 10%;
-        }
-
-        .link-btn:hover a {
-            background: #DFF68F;
-            border: 1px solid #DFF68F;
-            color: #343a40;
-            cursor: pointer;
-            text-decoration: none;
-        }
-
-        .btn-circle-border-simple {
-            display: inline-block;
-            text-decoration: none;
-            color: #DFF68F;
-            width: 120px;
-            height: 120px;
-            line-height: 120px;
-            border-radius: 50%;
-            border: solid 2px #DFF68F;
-            text-align: center;
-            overflow: hidden;
-            font-weight: bold;
-            transition: .4s;
-        }
-
-        .btn-circle-border-simple:hover {
-            text-decoration: none;
-            background: white;
-            border: solid 2px white;
-            color: black;
-
-        }
-
-        .max-percent-img {
-            width: 100%;
-        }
-
-        .bg-img {
-            background-image: url(<?php echo get_template_directory_uri();
-            ?>/img/bg/coffee_bg.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center center;
-            /* 縦横中央 */
-
-        }
-
-        .fa-mg {
-            margin-right: 0.6em;
-        }
-
-        .eng-title {
-            font-family: 'Goldman', cursive;
-        }
-    </style>
 
 </head>
 
@@ -385,8 +194,10 @@
                             <a style="font-size:0.8em;" class="dropdown-item my-1" href="/link"><i
                                     class="fas fa-link fa-mg"></i>リンク集</a>
                             <a style="font-size:0.6em;" class="dropdown-item my-1" href="/privacy-policy">プライバシーポリシー</a>
-
-                            <div class="dropdown-divider"></div>
+                            <a style="font-size:0.6em;" class="dropdown-item my-1"
+                                href="https://forms.gle/imCx9WurBvjQBA119" target=”_blank”>お問い合わせ(GoogleForm)</a>
+                            <div class=" dropdown-divider">
+                            </div>
                             <a style="font-size:0.8em;" class="dropdown-item" href="https://twitter.com/usuyuki26"
                                 target=”_blank”><i class="fab fa-twitter fa-mg"></i>Twitter</a>
                             <a style="font-size:0.8em;" class="dropdown-item" href="https://github.com/Usuyuki"

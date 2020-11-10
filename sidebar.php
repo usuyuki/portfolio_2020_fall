@@ -115,6 +115,10 @@
             <a href="/privacy-policy">
                 <p style="font-size:0.6em;">プライバシーポリシー</p>
             </a>
+            <a href="https://forms.gle/be1XENxLK6L8cP6q9">
+                <p style="font-size:0.6em;" target=”_blank”>お問い合わせ(GoogleForm)</p>
+            </a>
+
 
             <p>copyright 2020 usuyuki</p>
         </div>

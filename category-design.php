@@ -39,7 +39,6 @@
     'meta_key' => 'work_start', //ACFのフィールド名
     'order' => 'DESC'
 );
-            
                 $posts = get_posts($args);
 
                 if ( $posts ):
@@ -75,7 +74,7 @@
 
 
                 <!-- 詳細情報 -->
-                <div class="col-12 col-md-8">
+                <div class=" col-12 col-md-8">
                     <div class="d-flex flex-column p-2">
                         <div class="text-decoration-none text-white  mx-auto">
                             <a class="h4 text-center my-2" href="<?php echo get_permalink(); ?>">

@@ -6,14 +6,14 @@
     <!--Google Analyticsここから-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-07RXE7Y9QP"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-        gtag('config', 'G-07RXE7Y9QP');
+    gtag('config', 'G-07RXE7Y9QP');
     </script>
     <!--Google Analyticsここまで-->
 
@@ -32,6 +32,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
     <!-- aboutmeページのタイトルで使用 英語文字のみ対応 -->
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <!-- indexページのタイトルで使用 英語文字のみ対応 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text&display=swap" rel="stylesheet">
+
+
+
     <!-- bootstrap4読み込み -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -46,7 +52,7 @@
     <!-- スクロール時ふわっとでるためのJS読み込み -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/scrolle_fade.css">
     <script type="module">
-        $(window).scroll(function() {
+    $(window).scroll(function() {
         const wHeight = $(window).height();
         const scrollAmount = $(window).scrollTop();
         $('.scrollanime').each(function() {
@@ -60,15 +66,15 @@
     </script>
     <!-- 訳ありcss -->
     <style>
-        /* background-imageのurlがうまく機能しないため、ここに持ってきた */
-        .bg-img {
-            background-image: url(<?php echo get_template_directory_uri();
-            ?>/img/bg/coffee_bg.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center center;
-            /* 縦横中央 */
-        }
+    /* background-imageのurlがうまく機能しないため、ここに持ってきた */
+    .bg-img {
+        background-image: url(<?php echo get_template_directory_uri();
+        ?>/img/bg/coffee_bg.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        /* 縦横中央 */
+    }
     </style>
 
 

@@ -33,7 +33,7 @@
     <div class="mt-5">
         <p class="text-center h4 text-white">--進行中の制作物--</p>
     </div>
-    <div class="mx-auto  text-white  mb-4 row">
+    <div class="mx-auto  text-white  mb-4 row ">
         <?php
                        $args = array(
                         'post_type' => 'work',
@@ -53,7 +53,7 @@
                  
             ?>
 
-        <div class=" border border-warning mx-5 my-4 p-1 rounded row " style="min-width:70%;">
+        <div class=" border border-warning mx-5 my-4 p-1 rounded row scrollanime" style="min-width:70%;">
 
             <!-- 画像 -->
             <div class="col-12 col-md-4">
@@ -122,7 +122,7 @@
         <p class="text-center h4 text-white">--制作物--</p>
     </div>
     <!-- 完了制作物 スマホ・PC -->
-    <div class="mx-auto  text-white  mb-4 row">
+    <div class="mx-auto  text-white  mb-4 row ">
         <?php
                        $args = array(
                         'post_type' => 'work',
@@ -142,7 +142,7 @@
                  
             ?>
         <!-- 個別表示 -->
-        <div class=" border mx-5 my-4 p-1 rounded row " style="min-width:70%">
+        <div class=" border mx-5 my-4 p-1 rounded row scrollanime" style="min-width:70%">
 
             <!-- 画像 -->
             <div class="col-12 col-md-4">

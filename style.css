@@ -214,3 +214,22 @@ figcaption {
 .coffee-latest-table::-webkit-scrollbar {  /* Chrome, Safari 対応 */
     display:none;
 }
+
+
+
+/*1.フェードインアニメーションの指定*/
+.scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;         
+    }
+    100% {
+    opacity: 1;
+    transform: translate(0);
+    }
+}

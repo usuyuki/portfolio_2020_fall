@@ -43,8 +43,21 @@
         type="text/css" />
     <!-- Font Awesome読み込み -->
     <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet">
-
-
+    <!-- スクロール時ふわっとでるためのJS読み込み -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/scrolle_fade.css">
+    <script type="module">
+        $(window).scroll(function() {
+        const wHeight = $(window).height();
+        const scrollAmount = $(window).scrollTop();
+        $('.scrollanime').each(function() {
+            const targetPosition = $(this).offset().top;
+            if (scrollAmount > targetPosition - wHeight + 100) {
+                $(this).addClass("fadeInDown");
+            }
+        });
+    });
+    // 参考→https://natsukimemo.com/jquery-scroll-fadein
+    </script>
     <!-- 訳ありcss -->
     <style>
         /* background-imageのurlがうまく機能しないため、ここに持ってきた */
@@ -55,7 +68,6 @@
             background-attachment: fixed;
             background-position: center center;
             /* 縦横中央 */
-
         }
     </style>
 

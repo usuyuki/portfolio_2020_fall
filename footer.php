@@ -24,6 +24,7 @@
 <script>
     jQuery('img[usemap]').rwdImageMaps();
 </script>
+
 </body>
 
 </html>

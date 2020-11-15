@@ -51,6 +51,7 @@
                         echo wp_get_attachment_image( $image, $size );
                     }
                     else{
+                        // 画像なかったとき用
                         echo  wp_get_attachment_image( 126, $size );
                     }
                 ?>

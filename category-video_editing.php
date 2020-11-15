@@ -11,10 +11,15 @@
             <area shape="rect" coords="477,241,591,277" href="/hobby" alt="" />
         </map>
     </div>
+    <!-- 說明コーナー -->
+    <div class="text-white text-center mb-5">
+        <p>ここは私が制作したものを紹介するページです。</p>
+        <p>各制作物の画像または名前をクリックすると個別ページに飛びます。</p>
+    </div>
 
     <!-- ジャンル分けコーナー -->
     <div class="">
-        <p class="text-center h4 text-white">動画編集</p>
+        <p class="text-center h4 text-white">ジャンル:動画編集</p>
     </div>
     <div class="d-flex flex-wrap justify-content-center">
         <a class="btn btn-info mx-2 my-2" href="/work">全ジャンル</a>

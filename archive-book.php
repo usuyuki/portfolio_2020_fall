@@ -17,11 +17,13 @@
         <!-- 說明-->
         <div class="text-center mb-4 mx-auto">
             <p class="h5 border-bottom  ">このページについて</p>
-            <p class="">このページでは私が読んだ本に感想を添えて掲載しております。読んだ本は記憶の辿れる大学入学以降に限定しました。</p>
+            <p class="">
+                このページでは私が読んだ本に感想を添えて掲載しております。読んだ本は記憶の辿れる大学入学以降に限定しました。<br>また11月10日以前の感想は読後直後の感想ではなく、思い出して書いたものであるため、文章が短めとなっております。
+            </p>
         </div>
 
         <div class="text-center mb-4 mx-auto">
-            <p class="h5 border-bottom  ">このページに掲載されている画像について</p>
+            <p class="h5 border-bottom">このページに掲載されている画像について</p>
             <p class="">
                 このページではAmazonアソシエイト・プログラムの画像つきリンク生成機能により画像を添付しております。<br>Amazon側が公式機能として提供しているものですので著作権法上の問題は無いと解釈しておりますが、問題が生じた場合は速やかに掲載を取り消します。<br>画像をクリックすると該当するAmazonの購入ページへ遷移します。
             </p>
@@ -70,7 +72,7 @@
 
                         <p class="text-wrap">感想:<?php the_excerpt(); ?></p>
                         <?php if(!is_null(get_field('book_action'))): ?>
-                        <p class="text-wrap">アクションプラン→<?php the_field ( "book_action" ); ?>
+                        <p class="text-wrap mt-2">アクションプラン→<?php the_field ( "book_action" ); ?>
                         </p>
                         <?php endif; ?>
                     </div>

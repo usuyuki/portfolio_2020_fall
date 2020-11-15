@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 <!-- ここからメインコンテンツ -->
 <div class="col-md-10" style="min-height:100vh;">
-    <div class="main text-white text-center bg-img mt-5 ">
+    <div class="main text-white text-center  mt-5 ">
 
-        <div class="row text-center " style="padding-top:10%;">
+        <div class="row text-center pt-5">
             <p class="h1 m-3  mx-auto">This is Usuyuki Portfolio</p>
         </div>
 
-        <div class="row d-flex justify-content-around" style="padding-top:20%;">
+        <div class="row d-flex justify-content-around">
             <!-- <div class="my-3" style="flex-basis:40%;">
 
                 <img
@@ -25,11 +25,168 @@
                 <img
                     src="https://raw.githubusercontent.com/Usuyuki/Usuyuki/master/profile-summary-card-output/solarized/1-repos-per-language.svg">
             </div>
-            <!-- Git-grassうまく画像生成されない -->
-            <!-- <div class="my-3" style="flex-basis:20%;">
+            <!-- Git-grass -->
+            <div class="my-3 fit-img" style="flex-basis:20%;">
                 <img src="https://grass-graph.moshimo.works/images/Usuyuki.png">
 
-            </div> -->
+            </div>
+        </div>
+
+        <!-- スキル -->
+        <div class="row text-center pt-5">
+            <p class="h1 m-3  mx-auto">Skills</p>
+        </div>
+        <div class="row text-center d-flex justify-content-around flex-wrap">
+
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fab fa-html5 fa-4x"></i><br>
+                    HTML
+                </p>
+                <p>そこそこ</p>
+            </div>
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fab fa-css3-alt fa-4x"></i><br>
+                    CSS
+                </p>
+                <p>そこそこ</p>
+            </div>
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fab fa-js fa-4x"></i><br>
+                    JavaScript
+                </p>
+                <p>まだまだ</p>
+            </div>
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fab fa-php fa-4x"></i><br>
+                    PHP
+                </p>
+                <p>びみょう</p>
+            </div>
+            <div class="  p-3 rounded skill my-2">
+                <p>
+                    <i class="fab fa-laravel fa-4x mx-1"></i><br>
+                    Laravel
+                </p>
+                <p>そこそこ</p>
+            </div>
+
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fab fa-react fa-4x"></i><br>
+                    React
+                </p>
+                <p>まだまだ</p>
+            </div>
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fab fa-python fa-4x"></i><br>
+                    Python
+                </p>
+                <p>そこそこ</p>
+            </div>
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fab fa-codepen fa-4x"></i><br>
+                    C言語
+                </p>
+                <p>まだまだ</p>
+            </div>
+
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fab fa-bootstrap fa-4x"></i><br>
+                    Bootstrap
+                </p>
+                <p>そこそこ</p>
+            </div>
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fab fa-git-alt fa-4x"></i><br>
+                    Git
+                </p>
+                <p>そこそこ<span style="font-size:0.5em">(GUI操作ならOK)</span></p>
+            </div>
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fab fa-wordpress fa-4x"></i><br>
+                    WordPress
+                </p>
+                <p>びみょう</p>
+            </div>
+            <div class="  p-3 rounded skill my-2 mx-1">
+                <p>
+                    <i class="fas fa-microchip fa-4x"></i><br>
+                    Arduino
+                </p>
+                <p>びみょう</p>
+            </div>
+        </div>
+        <!-- 環境 -->
+        <div class="row text-center pt-5">
+            <p class="h1 m-3  mx-auto">Environment</p>
+        </div>
+        <div class="row text-center d-flex justify-content-around flex-wrap">
+
+            <div class="environment  p-3 rounded  my-2 mx-1">
+                <p>
+                    <i class="fas fa-file-code fa-4x"></i><br>
+                    VScode
+                </p>
+                <p>エディタ</p>
+            </div>
+            <div class="environment  p-3 rounded my-2 mx-1">
+                <p>
+                    <i class="fab fa-github fa-4x"></i><br>
+                    GitHub
+                </p>
+                <p>バージョン管理</p>
+            </div>
+            <div class="environment p-3 rounded  my-2 mx-1">
+                <p>
+                    <i class="fab fa-figma fa-4x"></i><br>
+                    Figma
+                </p>
+                <p>webサイトデザイン</p>
+            </div>
+            <div class="environment  p-3 rounded my-2 mx-1">
+                <p>
+                    <i class="fas fa-server fa-4x"></i><br>
+                    SakuraVPS
+                </p>
+                <p>VPSサーバー</p>
+            </div>
+            <div class="environment  p-3 rounded my-2 mx-1">
+                <p>
+                    <i class="fab fa-centos fa-4x"></i><br>
+                    CentOS(Kusanagi)
+                </p>
+                <p>サーバーOS<span style="font-size:0.5em">(学習中)</span></p>
+            </div>
+            <div class="environment  p-3 rounded my-2 mx-1">
+                <p>
+                    <i class="fab fa-windows fa-4x"></i><br>
+                    Windows10
+                </p>
+                <p>ローカルOS</p>
+            </div>
+            <div class="environment  p-3 rounded my-2 mx-1">
+                <p>
+                    <i class="fab fa-docker fa-4x"></i><br>
+                    Docker
+                </p>
+                <p>開発環境<span style="font-size:0.5em">(学習中)</span></p>
+            </div>
+            <div class="environment  p-3 rounded my-2 mx-1">
+                <p>
+                    <i class="fas fa-mug-hot fa-4x"></i><br>
+                    Hot Coffee
+                </p>
+                <p>ブレークタイム</p>
+            </div>
         </div>
 
     </div>

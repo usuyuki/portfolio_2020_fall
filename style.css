@@ -233,3 +233,11 @@ figcaption {
     transform: translate(0);
     }
 }
+
+.skill{
+    border:2px solid #DFF68F;
+
+}
+.environment{
+    border:2px solid #586E58;
+}

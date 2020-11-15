@@ -30,7 +30,7 @@
 
 
     <!-- ドラフトコーナー ここから-->
-    <div class="mt-3">
+    <div class="mt-5">
         <p class="text-center h4 text-white">--進行中の制作物--</p>
     </div>
     <div class="mx-auto  text-white  mb-4 row">

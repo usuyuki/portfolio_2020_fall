@@ -53,8 +53,7 @@
                  
             ?>
 
-        <div class=" border border-warning mx-5 my-4 p-1 rounded row scrollanime" style="min-width:70%;">
-
+        <div class=" border border-warning mx-5 my-4 p-1 rounded row " style="min-width:70%;">
             <!-- 画像 -->
             <div class="col-12 col-md-4">
                 <div class="work-img m-2">
@@ -142,7 +141,7 @@
                  
             ?>
         <!-- 個別表示 -->
-        <div class=" border mx-5 my-4 p-1 rounded row scrollanime" style="min-width:70%">
+        <div class=" border mx-5 my-4 p-1 rounded row " style="min-width:70%">
 
             <!-- 画像 -->
             <div class="col-12 col-md-4">

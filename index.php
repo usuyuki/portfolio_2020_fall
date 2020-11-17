@@ -273,9 +273,9 @@
 
         </div>
         <!-- ボタン、アニメーションもつけてみた -->
-        <div class="text-center mx-auto index-work-btn d-block p-2 mt-0 mb-4" style="width:25%">
+        <div class="text-center mx-auto index-work-btn d-block p-2 mt-0 mb-4" style="width:40vh">
             <a href="/work">
-                <p>作品全体はこちらからご覧になれます</p>
+                <p>制作物全体は<wbr>こちらからご覧になれます</p>
             </a>
         </div>
     </div>

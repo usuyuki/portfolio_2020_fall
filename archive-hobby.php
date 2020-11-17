@@ -16,7 +16,7 @@
 
 
 
-    <!-- 日付順でソート -->
+    <!-- 日付順でソート 今やっている趣味-->
     <div class="mx-auto pt-4">
         <div class="latest-coffee text-white  mb-4 ">
             <?php
@@ -26,7 +26,102 @@
                     'post_status' => 'publish',
                     'orderby' => 'meta_value',
                     'meta_key' => 'hobby_start', //ACFのフィールド名
-                    'order' => 'DESC'
+                    'order' => 'DESC',
+                    'meta_query'=>array(
+                        array(
+                            'key'=>'hobbby-now',
+                            'type'=>'CHAR',
+                            'compare'=>'=',
+                            'value'=>'now',
+                        )
+                    )
+                );
+
+                $posts = get_posts($args);
+
+                if ( $posts ):
+                    foreach( $posts as $post ): setup_postdata( $post );
+                 
+            ?>
+
+            <div class="row border mx-5 my-4 py-4 rounded box-hobby">
+
+                <!-- 画像 -->
+                <div class="col-md-3 col-12">
+                    <div class="work-img">
+                        <?php 
+                        $image = get_field('hobby_img');
+                        $size = 'thumbnail_medium'; // (thumbnail, medium, large, full or custom size)
+                        if( $image ) {
+                            echo wp_get_attachment_image( $image, $size );
+                        }
+                        else{
+                            // 画像なかったとき用
+                            echo  wp_get_attachment_image( 126, $size );
+                        }
+   
+                        ?>
+                    </div>
+
+                </div>
+
+
+
+                <!-- 詳細情報 -->
+                <div class="col-md-9 col-12">
+                    <!-- <div class="text-decoration-none text-white row text-right"> -->
+                    <div class="row">
+                        <div class="col-md-8 col-12 h2">
+
+                            <p><?php the_title(); ?></p>
+                        </div>
+                        <div class="col-md-4 col-12 mt-2">
+                            <div class="detail  text-left">
+                                <p class="text-warning">好き度:<?php the_field ( "hobby_depth" ); ?></p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class=" row mt-3 ml-md-2 ">
+
+                        <p><?php the_excerpt(); ?></p>
+                    </div>
+
+
+                </div>
+            </div>
+            <?php 
+                    endforeach;
+                endif;
+                ?>
+
+
+        </div>
+
+    </div>
+
+
+    <!-- 日付順でソート かつての趣味-->
+    <div class="mx-auto pt-4">
+        <div class="latest-coffee text-white  mb-4 ">
+            <h1 class="text-center h2">今はやらなくなってしまった趣味</h1>
+            <?php
+                $args = array(
+                    'post_type' => 'hobby',
+                    'numberposts' => -1,
+                    'post_status' => 'publish',
+                    'orderby' => 'meta_value',
+                    'meta_key' => 'hobby_start', //ACFのフィールド名
+                    'order' => 'DESC',
+                    'meta_query'=>array(
+                        array(
+                            'key'=>'hobbby-now',
+                            'type'=>'CHAR',
+                            'compare'=>'=',
+                            'value'=>'old',
+                        )
+                    )
                 );
 
                 $posts = get_posts($args);

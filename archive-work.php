@@ -11,7 +11,7 @@
             <area shape="rect" coords="477,241,591,277" href="/hobby" alt="" />
         </map>
     </div>
-    <!-- 說明コーナー -->
+    <!-- 說明コーナー  -->
     <div class="text-white text-center mb-5">
         <p>ここは私が制作したものを紹介するページです。</p>
         <p>各制作物の画像または名前をクリックすると個別ページに飛びます。</p>
@@ -29,7 +29,7 @@
     </div>
 
 
-    <!-- ドラフトコーナー ここから-->
+    <!-- ドラフトコーナー  ここから-->
     <div class="mt-5">
         <p class="text-center h4 text-white">--進行中の制作物--</p>
     </div>

@@ -247,3 +247,34 @@ figcaption {
 .PostFont{
     font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
 }
+
+
+.index-work-btn a {
+    display: block;
+    padding: 0.3em;
+    color: #fff;
+    background: #000;
+    border: 1px solid #fff;
+  }
+  
+  .index-work-btn:hover a {
+  
+    animation-name: indexbtn-baa;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes indexbtn-baa {
+    0% {
+           
+    }
+    100% {
+        background: #fff;
+        border: 1px solid #fff;
+        color: #000;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+  }
+  
+  

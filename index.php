@@ -189,6 +189,95 @@
             <img src="https://grass-graph.moshimo.works/images/Usuyuki.png">
 
         </div> -->
+        <!-- 最近の制作物 -->
+        <hr>
+        <div class="row text-center pt-5 indexFont">
+            <p class="h1 mt-3 mb-0 mx-auto ">Latest Works</p>
+        </div>
+        <div class="">
+            <?php $args=array(
+            'numberposts'=>2,
+            'post_type'=>'work',
+            'orderby' => 'meta_value',
+            'meta_key' => 'work_start', //ACFのフィールド名
+            'order' => 'DESC'
+
+            );
+            $customPost=get_posts($args);
+            if($customPost):
+                foreach($customPost as $post):
+                    // setup_postdata($post):
+            ?>
+            <div class=" border mx-5 my-4 p-1 rounded row " style="min-width:70%">
+
+                <!-- 画像 -->
+                <div class="col-12 col-md-4">
+                    <div class="work-img m-2">
+                        <a href="<?php echo get_permalink(); ?>">
+                            <?php 
+            $image = get_field('work_img');
+            $size = 'thumbnail_medium'; // (thumbnail, medium, large, full or custom size)
+            if( $image ) {
+                echo wp_get_attachment_image( $image, $size );
+            }
+            else{
+                // 画像なかったとき用
+                echo  wp_get_attachment_image( 126, $size );
+                
+            }
+            ?>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+                <!-- 詳細情報 -->
+                <div class="col-12 col-md-8">
+                    <div class="d-flex flex-column p-2">
+                        <div class="text-decoration-none text-white  mx-auto">
+                            <a class="h4 text-center my-2" href="<?php echo get_permalink(); ?>">
+                                "<?php the_title(); ?>"</a>
+                        </div>
+                        <div class="row mt-1">
+
+                            <div class="col-12 col-md-3 detail my-1 mx-auto my-mt-auto">
+                                <p class="text-warning">公開・デプロイ日:<?php the_field ( "work_start" ); ?></p>
+
+                            </div>
+                            <div class="col-12 col-md-3 detail  my-1 mx-auto my-mt-auto">
+                                <p class="text-info">使用技術:<?php the_field ( "work_tech" ); ?></p>
+
+                            </div>
+                            <div class="col-12 col-md-3 work-kind  my-1 mx-auto my-mt-auto">
+                                <p class="p-2 border border-primary rounded ">
+                                    <?php the_field ( "work_kind" ); ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-4 pl-0  text-left mx-center">
+
+                            <p><?php the_excerpt(); ?></p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <?php endforeach; ?>
+            <?php else: ?>
+            <p>作品がありません</p>
+            <?php endif; ?>
+
+        </div>
+        <!-- ボタン、アニメーションもつけてみた -->
+        <div class="text-center mx-auto index-work-btn d-block p-2 mt-0 mb-4" style="width:25%">
+            <a href="/work">
+                <p>作品全体はこちらからご覧になれます</p>
+            </a>
+        </div>
     </div>
 </div><!-- メインのcolのdiv閉じ -->
 

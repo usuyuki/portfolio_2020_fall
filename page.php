@@ -9,7 +9,7 @@
         <div class="col text-left mt-4 h2">
             <!-- <h1><?php the_title(); ?></h1> -->
         </div>
-        <article class="col text-left">
+        <article class="col text-left ">
             <p><?php the_content(); ?></p>
         </article>
         <?php 

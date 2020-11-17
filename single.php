@@ -2,11 +2,11 @@
 <!-- ここからメインコンテンツ -->
 <div class="col-md-10" style="min-height:100vh;">
     <div class="main text-white">
-        <div class="post">
-            <h1 class="h1"><?php the_title() ?></h1>
+        <div class="post mx-auto">
+            <h1 class="h1 mx-auto text-center"><?php the_title() ?></h1>
 
-            <section>
-                <article class="h4 text-white">
+            <section class="mx-auto">
+                <article class=" text-white PostFont">
                     <?php the_content(); ?>
                 </article>
 

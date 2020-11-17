@@ -23,9 +23,9 @@
     </div>
     <div class="d-flex flex-wrap justify-content-center">
         <a class="btn btn-info mx-2 my-2" href="/work">全ジャンル</a>
-        <a class="btn btn-info  mx-2 my-2" href="/category/programing">プログラミング</a>
-        <a class="btn btn-info  mx-2 my-2" href="/category/video_editing">動画編集</a>
-        <a class="btn btn-info  mx-2 my-2" href="/category/design">デザイン</a>
+        <a class="btn btn-info  mx-2 my-2" href="/genre/programing">プログラミング</a>
+        <a class="btn btn-info  mx-2 my-2" href="/genre/video_editing">動画編集</a>
+        <a class="btn btn-info  mx-2 my-2" href="/genre/design">デザイン</a>
     </div>
 
 

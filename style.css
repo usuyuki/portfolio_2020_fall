@@ -4,277 +4,302 @@ Description : タイトルの通り
 Version : 0.1
 */
 header {
-    height: 100%
+  height: 100%;
 }
 
 html,
 body {
-    font-family: 'Kosugi Maru', sans-serif;
-
+  font-family: "Kosugi Maru", sans-serif;
 }
 
 .kosugi {
-    font-family: 'Kosugi', sans-serif;
-
+  font-family: "Kosugi", sans-serif;
 }
 
 .sidebar_fixed {
-    position: fixed;
-    top: 0px;
-    background-color: #9C776D;
-    /* height: 100%; */
-    height: 100vh;
-    max-height: 100vh;
-    /* heightとmax-heightで画面いっぱいかつスクロール固定を実現 */
+  position: fixed;
+  top: 0px;
+  background-color: #9c776d;
+  /* height: 100%; */
+  height: 100vh;
+  max-height: 100vh;
+  /* heightとmax-heightで画面いっぱいかつスクロール固定を実現 */
 }
 
 .main {
-    background-color: black;
+  background-color: black;
 }
 
 .back-black {
-    background-color: black;
+  background-color: black;
 }
 
 .copyright {
-    margin-top: 10%;
-
+  margin-top: 10%;
 }
 
 a:hover {
-
-    text-decoration: underline;
-    color: white;
-
+  text-decoration: underline;
+  color: white;
 }
 
 .wrap {
-    /* overflow: hidden; */
+  /* overflow: hidden; */
 }
 
 .logo-img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .work-img img {
-    display: block;
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
- 
-    margin:auto;
-  
-    
+  display: block;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+
+  margin: auto;
 }
 
-
-
 .work-img iframe {
-    object-fit: contain;
+  object-fit: contain;
 
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .box-hobby {
-    background-color: #8d1e47;
-    border: 2px dashed #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 0 4px #8d1e47;
-    color: #fff;
-    margin: 2em 0;
-    padding: 2em;
+  background-color: #8d1e47;
+  border: 2px dashed #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 0 4px #8d1e47;
+  color: #fff;
+  margin: 2em 0;
+  padding: 2em;
 }
 
-.for-page {}
+.for-page {
+}
 
 .for-page h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin: 1% 0;
-    border-top: 1px solid white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 1% 0;
+  border-top: 1px solid white;
 }
 
 .for-page h3 {
-    font-size: 1em;
-    font-weight: bold;
-    margin: 1% 0;
-    border-top: 1px solid white;
-
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1% 0;
+  border-top: 1px solid white;
 }
 
 figcaption {
-    font-size: 0.5em;
-    text-align: center;
+  font-size: 0.5em;
+  text-align: center;
 }
 
 .ekimeihyou img {
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .table-aaa {
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .fit-img img {
-    object-fit: contain;
-    width: 100%;
-    /* height: 100%; */
+  object-fit: contain;
+  width: 100%;
+  /* height: 100%; */
 }
 
 .book-img img {
-    object-fit: contain;
-    /* width: 20%; */
-    max-width: 100%;
-    /* height: 100%; */
+  object-fit: contain;
+  /* width: 20%; */
+  max-width: 100%;
+  /* height: 100%; */
 }
 
 .link-btn a {
+  text-decoration: none;
 
-    text-decoration: none;
+  padding: 0.5em;
 
-    padding: 0.5em;
-
-    text-align: center;
-    color: white;
-    background: black;
-    border: 1px solid white;
-    border-radius: 10%;
+  text-align: center;
+  color: white;
+  background: black;
+  border: 1px solid white;
+  border-radius: 10%;
 }
 
 .link-btn:hover a {
-    background: #DFF68F;
-    border: 1px solid #DFF68F;
-    color: #343a40;
-    cursor: pointer;
-    text-decoration: none;
+  background: #dff68f;
+  border: 1px solid #dff68f;
+  color: #343a40;
+  cursor: pointer;
+  text-decoration: none;
 }
 /* linkページの丸 */
 .btn-circle-border-simple {
-    display: inline-block;
-    text-decoration: none;
-    color: #DFF68F;
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-    border-radius: 50%;
-    border: solid 2px #DFF68F;
-    text-align: center;
-    overflow: hidden;
-    font-weight: bold;
-    transition: .4s;
+  display: inline-block;
+  text-decoration: none;
+  color: #dff68f;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: solid 2px #dff68f;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  transition: 0.4s;
 }
 
 .btn-circle-border-simple:hover {
-    text-decoration: none;
-    background: white;
-    border: solid 2px white;
-    color: black;
-
+  text-decoration: none;
+  background: white;
+  border: solid 2px white;
+  color: black;
 }
 
 .max-percent-img {
-    width: 100%;
+  width: 100%;
 }
 
-
-
 .fa-mg {
-    margin-right: 0.6em;
+  margin-right: 0.6em;
 }
 
 .eng-title {
-    font-family: 'Goldman', cursive;
+  font-family: "Goldman", cursive;
 }
 
 /* 学歴,職歴の丸 */
-.entry-sheet-circle{
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    border: solid 2px white;
-    line-height: 80px;
+.entry-sheet-circle {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border: solid 2px white;
+  line-height: 80px;
 }
 
 /* コーヒーページリストのスクロール */
 
 .coffee-latest-table {
-    overflow:scroll;
-    max-width:100%;
-    overflow-y: scroll;
-    -ms-overflow-style: none;    /* IE, Edge 対応 */
-    scrollbar-width: none;       /* Firefox 対応 */
+  overflow: scroll;
+  max-width: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE, Edge 対応 */
+  scrollbar-width: none; /* Firefox 対応 */
 }
-.coffee-latest-table::-webkit-scrollbar {  /* Chrome, Safari 対応 */
-    display:none;
+.coffee-latest-table::-webkit-scrollbar {
+  /* Chrome, Safari 対応 */
+  display: none;
 }
-
-
 
 /*1.フェードインアニメーションの指定*/
-.scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+.scrollanime {
+  opacity: 0;
+} /*一瞬表示されるのを防ぐ*/
 .fadeInDown {
-    animation-name: fadeInDown;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  animation-name: fadeInDown;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 @keyframes fadeInDown {
-    0% {
-        opacity: 0;         
-    }
-    100% {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
     transform: translate(0);
-    }
+  }
 }
 
-.skill{
-    border:2px solid #DFF68F;
-
+.skill {
+  border: 2px solid #dff68f;
 }
-.environment{
-    border:2px solid #afc26e;
+.environment {
+  border: 2px solid #afc26e;
 }
-.indexFont{
-    font-family: 'Big Shoulders Inline Text', cursive;
+.indexFont {
+  font-family: "Big Shoulders Inline Text", cursive;
 }
-.PostFont{
-    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Hiragino Kaku Gothic ProN,Hiragino Sans,ヒラギノ角ゴ ProN W3,Arial,メイリオ,Meiryo,sans-serif;
+.PostFont {
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Segoe UI,
+    Hiragino Kaku Gothic ProN, Hiragino Sans, ヒラギノ角ゴ ProN W3, Arial,
+    メイリオ, Meiryo, sans-serif;
 }
-
 
 .index-work-btn a {
-    display: block;
-    padding: 0.3em;
-    color: #fff;
-    background: #000;
-    border: 1px solid #fff;
-  }
-  
-  .index-work-btn:hover a {
-  
-    animation-name: indexbtn-baa;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  display: block;
+  padding: 0.3em;
+  color: #fff;
+  background: #000;
+  border: 1px solid #fff;
+}
+
+.index-work-btn:hover a {
+  animation-name: indexbtn-baa;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 @keyframes indexbtn-baa {
-    0% {
-           
-    }
-    100% {
-        background: #fff;
-        border: 1px solid #fff;
-        color: #000;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
+  0% {
   }
-  
-  
+  100% {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+/* coffee横スクロール用 */
+.horizontal_scroll {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0 12px 8px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* 画面幅が768px以上の場合、横スクロールを解除 */
+@media screen and (min-width: 768px) {
+  .horizontal_scroll {
+    overflow-x: inherit;
+    padding: 0 8px 6px;
+  }
+}
+
+.horizontal_scroll > li {
+  width: 100%;
+  min-width: 140px;
+}
+
+@media screen and (min-width: 768px) {
+  .horizontal_scroll > li {
+    min-width: inherit;
+  }
+}
+
+.horizontal_scroll > li:not(:last-child) {
+  margin-right: 5px;
+}
+
+.horizontal_scroll > li:last-child {
+  padding-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .horizontal_scroll > li:last-child {
+    padding-right: 0;
+  }
+}

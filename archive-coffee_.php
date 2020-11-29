@@ -19,9 +19,9 @@
 
             <p class="h3 text-white">●最近購入した珈琲豆</p>
         </div>
+        <!-- 最近買った豆 PC用！！-->
 
-
-        <!--最近買った豆  -->
+        <!--最近買った豆 スマホ用！！ -->
         <div class="latest-coffee text-white d-flex mb-4  flex-column">
             <?php
                 $args = array(
@@ -116,30 +116,30 @@
 
 
         <div class="d-flex flex-wrap  justify-content-around mt-4">
-            <p class="text-white d-block d-md-none">←スクロールできます→</p>
-            <div class="horizontal_scroll">
-                <?php
-            $args = array(
-                'post_type' => 'coffee',
-                'numberposts' => -1,
-                'post_status' => 'publish',
-                'orderby' => 'meta_value',
-                'meta_key' => 'coffee_date', //ACFのフィールド名
-                'order' => 'DESC'
-            );
 
-               $posts = get_posts($args);
+
+            <?php
+$args = array(
+    'post_type' => 'coffee',
+    'numberposts' => -1,
+    'post_status' => 'publish',
+    'orderby' => 'meta_value',
+    'meta_key' => 'coffee_date', //ACFのフィールド名
+    'order' => 'DESC'
+);
+
+$posts = get_posts($args);
 
             if ( $posts ):
                 foreach( $posts as $post ): setup_postdata( $post );
                  
             ?>
-                <section class="text-white text-decoration-none text-center my-5  px-2" style="flex-basis:30%; ">
+            <section class="text-white text-decoration-none text-center my-5  " style="flex-basis:30%; ">
 
-                    <div class="">
-                        <!-- 画像 -->
-                        <a href="<?php echo get_permalink(); ?>">
-                            <?php 
+                <div class="">
+                    <!-- 画像 -->
+                    <a href="<?php echo get_permalink(); ?>">
+                        <?php 
                             $image = get_field('coffee_img');
                             $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
                             if( $image ) {
@@ -149,28 +149,28 @@
                                 echo  wp_get_attachment_image( 126, $size );
                             }
                         ?>
-                        </a>
+                    </a>
 
-                    </div>
-                    <h2 class="text-decoration-none text-white h5 text-center mt-2 mb-1">
-                        <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
-                    </h2>
-                    <p>産地:<?php  the_field ("coffee_country" ); ?></p>
+                </div>
+                <h2 class="text-decoration-none text-white h5 text-center mt-2 mb-1">
+                    <a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a>
+                </h2>
+                <p>産地:<?php  the_field ("coffee_country" ); ?></p>
 
-                    <p>購入日:<?php the_field ( "coffee_date" ); ?></p>
+                <p>購入日:<?php the_field ( "coffee_date" ); ?></p>
 
-                </section>
+            </section>
 
-                <?php 
+            <?php 
                 endforeach;
             endif;
             ?>
 
-            </div>
-
-
-
         </div>
+
+
+
+
 
     </div>
 </div><!-- メインのcolのdiv閉じ -->

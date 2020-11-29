@@ -116,8 +116,8 @@
 
 
         <div class="d-flex flex-wrap  justify-content-around mt-4">
-            <p class="text-white d-block d-md-none">←スクロールできます→</p>
-            <div class="horizontal_scroll">
+
+            <div class="horizontal_scroll" id="scroll_box">
                 <?php
             $args = array(
                 'post_type' => 'coffee',

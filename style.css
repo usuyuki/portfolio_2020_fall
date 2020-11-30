@@ -290,3 +290,15 @@ figcaption {
 }
 
 /* coffee横スクロール用ここまで */
+/* bookの枠色でnth-child使ってみた */
+.border-nth {
+  border: 2px solid white;
+  border-radius: 0.5%;
+}
+.border-nth:nth-child(2n) {
+  border: 2px solid #869456;
+}
+
+.border-nth:nth-child(2n + 1) {
+  border: 2px solid #586e58;
+}

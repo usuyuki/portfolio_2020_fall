@@ -50,7 +50,7 @@
                             
                         ?>
 
-            <div class="book-waku border rounded border-white my-2 mx-auto p-2" style="width:80%;">
+            <div class="book-waku border-nth my-2 mx-auto p-2" style="width:80%;">
                 <div class="d-flex flex-wrap">
 
                     <div class=" pl-md-4 pr-md-0 mx-auto mx-md-0 mt-1 book-img">

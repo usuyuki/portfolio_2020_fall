@@ -17,7 +17,7 @@
 
         <div class="">
 
-            <p class="h3 text-white">●最近購入した珈琲豆</p>
+            <p class="text-center text-white mb-4 h5">直近で購入した珈琲豆</p>
         </div>
 
 
@@ -111,13 +111,13 @@
     <div class="post border-top border-white">
 
 
-        <!-- <p class="text-white text-center h1">購入した珈琲豆</p> -->
+        <p class="text-white text-center h5 mt-5">これまでに購入した珈琲豆</p>
 
 
 
-        <div class="d-flex flex-wrap  justify-content-around mt-4">
+        <div class="d-flex flex-wrap  justify-content-around ">
 
-            <div class="horizontal_scroll" id="scroll_box">
+            <div class="horizontal_scroll mb-5 mb-md-3" id="scroll_box">
                 <?php
             $args = array(
                 'post_type' => 'coffee',

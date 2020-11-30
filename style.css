@@ -290,6 +290,7 @@ figcaption {
 }
 
 /* coffee横スクロール用ここまで */
+
 /* bookの枠色でnth-child使ってみた */
 .border-nth {
   border: 2px solid white;
@@ -302,3 +303,72 @@ figcaption {
 .border-nth:nth-child(2n + 1) {
   border: 2px solid #586e58;
 }
+
+/* indexページのgithub下からフェードイン ここから*/
+.fade-in-bottom-1 {
+  opacity: 0;
+  /* アニメーションの速さ時間など指定 */
+  /* 適応するアニメーション名 */
+  animation-name: fadein-bottom;
+  /* 開始までの待ち時間 */
+  /* animation-delay: 1s; */
+  /* 進行度合い アニメーションの時間*/
+  animation-duration: 1.5s;
+  /* 進行スピードの調整 ease-outは終盤ゆっくり動かす */
+  animation-timing-function: ease-out;
+  /* アニメーション始まる前と終わった後の状態を指定  forwardsで終わった後そのままキープ*/
+  animation-fill-mode: forwards;
+}
+
+.fade-in-bottom-2 {
+  opacity: 0;
+  /* アニメーションの速さ時間など指定 */
+  animation-name: fadein-bottom;
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.fade-in-bottom-3 {
+  opacity: 0;
+  /* アニメーションの速さ時間など指定 */
+  animation-name: fadein-bottom;
+  animation-delay: 0.75s;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.fade-in-bottom-4 {
+  opacity: 0;
+  /* アニメーションの速さ時間など指定 */
+  animation-name: fadein-bottom;
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+.fade-in-bottom-5 {
+  opacity: 0;
+  /* アニメーションの速さ時間など指定 */
+  animation-name: fadein-bottom;
+  animation-delay: 1.25s;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+/* アニメーションの内容→色形大きさなど */
+@keyframes fadein-bottom {
+  /* 0%の状態と100%の状態を書く！ */
+  0% {
+    /* 要素の透明度最初0 */
+    opacity: 0;
+    /* 要素の上下左右の位置調整 */
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* indexページのgithub下からフェードイン ここまで*/

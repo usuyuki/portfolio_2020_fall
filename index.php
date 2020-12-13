@@ -108,7 +108,7 @@
 
                 <div class="  p-3 rounded skill my-2 mx-1">
                     <p>
-                        <i class="far fa-file-code"></i><br>
+                        <i class="far fa-file-code fa-4x"></i><br>
                         TailwindCSS
                     </p>
                     <p>そこそこ</p>

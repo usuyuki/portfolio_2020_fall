@@ -395,3 +395,7 @@ body.fadeout::after {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 } */
+.work-year-yoko {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}

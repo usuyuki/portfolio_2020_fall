@@ -105,6 +105,14 @@
                     </p>
                     <p>そこそこ</p>
                 </div>
+
+                <div class="  p-3 rounded skill my-2 mx-1">
+                    <p>
+                        <i class="far fa-file-code"></i><br>
+                        TailwindCSS
+                    </p>
+                    <p>そこそこ</p>
+                </div>
                 <div class="  p-3 rounded skill my-2 mx-1">
                     <p>
                         <i class="fab fa-git-alt fa-4x"></i><br>

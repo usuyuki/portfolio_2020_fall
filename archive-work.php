@@ -121,8 +121,13 @@
         <p class="text-center h4 text-white">--制作物--</p>
     </div>
     <!-- 完了制作物 スマホ・PC -->
-    <div class="mx-auto  text-white  mb-4 row ">
-        <?php
+    <div class="row">
+        <!-- <div class="col-0 col-md-1 text-white work-year-yoko">
+            2020
+        </div> -->
+        <div class="mx-auto  text-white  mb-4 col-12 col-md-11 ">
+
+            <?php
                        $args = array(
                         'post_type' => 'work',
                         'numberposts' => -1,
@@ -140,14 +145,14 @@
                             
                  
             ?>
-        <!-- 個別表示 -->
-        <div class=" border mx-5 my-4 p-1 rounded row " style="min-width:70%">
+            <!-- 個別表示 -->
+            <div class=" border mx-5 my-4 p-1 rounded row " style="min-width:70%">
 
-            <!-- 画像 -->
-            <div class="col-12 col-md-4">
-                <div class="work-img m-2">
-                    <a href="<?php echo get_permalink(); ?>">
-                        <?php 
+                <!-- 画像 -->
+                <div class="col-12 col-md-4">
+                    <div class="work-img m-2">
+                        <a href="<?php echo get_permalink(); ?>">
+                            <?php 
                         $image = get_field('work_img');
                         $size = 'thumbnail_medium'; // (thumbnail, medium, large, full or custom size)
                         if( $image ) {
@@ -159,52 +164,53 @@
                             
                         }
                         ?>
-                    </a>
-                </div>
-
-            </div>
-
-
-
-            <!-- 詳細情報 -->
-            <div class="col-12 col-md-8">
-                <div class="d-flex flex-column p-2">
-                    <div class="text-decoration-none text-white  mx-auto">
-                        <a class="h4 text-center my-2" href="<?php echo get_permalink(); ?>">
-                            "<?php the_title(); ?>"</a>
+                        </a>
                     </div>
-                    <div class="row mt-1">
 
-                        <div class="col-12 col-md-3 detail my-1 mx-auto my-mt-auto">
-                            <p class="text-warning">公開・デプロイ日:<?php the_field ( "work_start" ); ?></p>
-
-                        </div>
-                        <div class="col-12 col-md-3 detail  my-1 mx-auto my-mt-auto">
-                            <p class="text-info">使用技術:<?php the_field ( "work_tech" ); ?></p>
-
-                        </div>
-                        <div class="col-12 col-md-3 work-kind  my-1 mx-auto my-mt-auto">
-                            <p class="p-2 border border-primary rounded ">
-                                <?php the_field ( "work_kind" ); ?>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="mt-4 pl-0  text-left mx-center">
-
-                        <p><?php the_excerpt(); ?></p>
-                    </div>
                 </div>
 
 
 
+                <!-- 詳細情報 -->
+                <div class="col-12 col-md-8">
+                    <div class="d-flex flex-column p-2">
+                        <div class="text-decoration-none text-white  mx-auto">
+                            <a class="h4 text-center my-2" href="<?php echo get_permalink(); ?>">
+                                "<?php the_title(); ?>"</a>
+                        </div>
+                        <div class="row mt-1">
+
+                            <div class="col-12 col-md-3 detail my-1 mx-auto my-mt-auto">
+                                <p class="text-warning">公開・デプロイ日:<?php the_field ( "work_start" ); ?></p>
+
+                            </div>
+                            <div class="col-12 col-md-3 detail  my-1 mx-auto my-mt-auto">
+                                <p class="text-info">使用技術:<?php the_field ( "work_tech" ); ?></p>
+
+                            </div>
+                            <div class="col-12 col-md-3 work-kind  my-1 mx-auto my-mt-auto">
+                                <p class="p-2 border border-primary rounded ">
+                                    <?php the_field ( "work_kind" ); ?>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-4 pl-0  text-left mx-center">
+
+                            <p><?php the_excerpt(); ?></p>
+                        </div>
+                    </div>
+
+
+
+                </div>
             </div>
-        </div>
-        <?php 
+            <?php 
                 endforeach;
             endif;
             ?>
 
 
+        </div>
     </div>
 
 

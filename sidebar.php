@@ -14,6 +14,7 @@
         <div class="row text-center my-2 py-2 text-danger font-weight-bold bg-dark">
             <p class="  mx-auto ">本サイトは旧ポートフォリオサイトです.</p>
             <p class="  mx-auto ">新しいサイトは<a href="https://usuyuki.net/">コチラ</a></p>
+            <p class="  mx-auto " style="font-size:0.5em">※2021年7月10日以降の制作物などは上記サイトからご覧になれます。</p>
         </div>
         <div class="side-menu flex-column kosugi">
             <!-- ふれっくすぼっくす使った -->

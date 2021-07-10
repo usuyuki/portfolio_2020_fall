@@ -11,7 +11,11 @@
             <area shape="rect" coords="477,241,591,277" href="/hobby" alt="" />
         </map>
     </div>
-    <!-- 說明コーナー  -->
+    <div class="text-white row text-center py-5 ">
+        <p class="h1 m-3  mx-auto ">本サイトは旧ポートフォリオサイトです！！！！新しいサイトは下記です。</p>
+        <p class="h1 m-3  mx-auto "><a href="https://usuyuki.net/">https://portfolio.usuyuki.net/</a></p>
+    </div>
+    <!-- 説明コーナー  -->
     <div class="text-white text-center mb-5">
         <p>ここは私が制作したものを紹介するページです。</p>
         <p>各制作物の画像または名前をクリックすると個別ページに飛びます。</p>

@@ -30,7 +30,10 @@
             <p class="text-right" style="color:rgba(250,250,250,0.5); font-size:0.5em;">※上記のカードはGitHubのデータを読み込んでいます。</p>
         </div>
 
-
+        <div class="row text-center pt-5 fade-in-bottom-2">
+            <p class="h1 m-3  mx-auto ">本サイトは旧ポートフォリオサイトです！！！！新しいサイトは下記です。</p>
+            <p class="h1 m-3  mx-auto "><a href="https://usuyuki.net/">https://portfolio.usuyuki.net/</a></p>
+        </div>
         <!-- スキル -->
         <div class="fade-in-bottom-3">
 

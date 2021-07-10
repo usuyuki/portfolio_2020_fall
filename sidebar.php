@@ -11,7 +11,10 @@
                     src="<?php echo get_template_directory_uri(); ?>/img/logo/portfolio_title20201027.png">
             </a>
         </div>
-
+        <div class="row text-center my-2 py-2 text-danger font-weight-bold bg-dark">
+            <p class="  mx-auto ">本サイトは旧ポートフォリオサイトです.</p>
+            <p class="  mx-auto ">新しいサイトは<a href="https://usuyuki.net/">コチラ</a></p>
+        </div>
         <div class="side-menu flex-column kosugi">
             <!-- ふれっくすぼっくす使った -->
 
